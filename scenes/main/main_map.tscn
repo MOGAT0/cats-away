@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://ddynit3p3y8xn"]
+
+[ext_resource type="PackedScene" uid="uid://c1kir5hwgtvdu" path="res://ocean simulation/stylized_ocean.tscn" id="1_vas5k"]
+[ext_resource type="PackedScene" uid="uid://i1deoi48p6g2" path="res://boats/phase1/1/boat.tscn" id="3_f8fwh"]
+[ext_resource type="PackedScene" uid="uid://bs1u5ylhfhwev" path="res://entities/player/player.scn" id="4_tmm0v"]
+[ext_resource type="PackedScene" uid="uid://bwac1ripq0c8e" path="res://procedural island/spawner/island_manager.tscn" id="4_vas5k"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_vas5k"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_321mu"]
+sky_material = SubResource("ProceduralSkyMaterial_vas5k")
+
+[sub_resource type="Environment" id="Environment_f8fwh"]
+background_mode = 2
+sky = SubResource("Sky_321mu")
+tonemap_mode = 2
+glow_enabled = true
+
+[node name="MainMap" type="Node3D" unique_id=1921781132]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=925895077]
+environment = SubResource("Environment_f8fwh")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1950475847]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+shadow_enabled = true
+
+[node name="stylized_ocean" parent="." unique_id=2022240241 node_paths=PackedStringArray("track_target") instance=ExtResource("1_vas5k")]
+track_target = NodePath("../Player")
+
+[node name="boat" parent="." unique_id=1044226783 instance=ExtResource("3_f8fwh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.389854, 3.8921523, -78.968445)
+
+[node name="Player" parent="." unique_id=309185368 instance=ExtResource("4_tmm0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.389854, 9.090176, -78.968445)
+
+[node name="IslandManager" parent="." unique_id=1096106836 node_paths=PackedStringArray("player") instance=ExtResource("4_vas5k")]
+generate_map = true
+player = NodePath("../Player")

@@ -1,0 +1,3618 @@
+[gd_scene format=3 uid="uid://c1kir5hwgtvdu"]
+
+[ext_resource type="Script" uid="uid://c5eua0nl05vkw" path="res://ocean simulation/stylized_ocean.gd" id="1_3j3pt"]
+[ext_resource type="Material" uid="uid://dgj8b1c3e024a" path="res://ocean simulation/stylized_ocean.tres" id="2_h1056"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_h1056"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_bhpr2"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_iod61"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_xslt8"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_bj4u3"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_vah00"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_wje3d"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_gausr"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_vsqhs"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_j4qtj"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_tfq5r"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ylgx8"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_y5lq8"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_htk4o"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_cxsuo"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_rty2m"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_poij1"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ah5yu"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_22ew2"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_rwjjl"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_5vdp4"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_62vjd"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_xmudv"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_5jvtp"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_84jhf"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_d7kg8"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_q83rw"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_gl86b"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_uybhy"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_dw2fu"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_0uual"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_0f7mp"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_aorwf"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ba6qj"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_5lit1"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_q72vo"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_7wd42"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_7ty15"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_x8tkx"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_v8gm4"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_l1iij"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_e3wl2"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_utrqh"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_b6enr"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_xot3m"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_vupmt"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_siahw"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_g1k62"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ay7fm"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_s4md8"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_4o84d"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_8caqw"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_peota"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_3urnj"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_yggnv"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_qpi0k"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_vq4rk"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_podnu"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_hf68u"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_bc5wf"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_xidts"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 2
+subdivide_depth = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_toqhe"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 2
+subdivide_depth = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_hlpeh"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 2
+subdivide_depth = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_rah7h"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 2
+subdivide_depth = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_8515f"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 2
+subdivide_depth = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_lko83"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 2
+subdivide_depth = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_8e2ry"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 2
+subdivide_depth = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_hh8am"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 2
+subdivide_depth = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_6lapo"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 2
+subdivide_depth = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_mtm1c"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 2
+subdivide_depth = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_lgcj8"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 2
+subdivide_depth = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_cwjio"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 2
+subdivide_depth = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_25rvi"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 2
+subdivide_depth = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_jdo6l"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_lumfm"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_1os2f"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_330bm"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_5jatl"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_tlswh"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_5d4ul"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 2
+subdivide_depth = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_oeaoj"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 4
+subdivide_depth = 4
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_it7wj"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 4
+subdivide_depth = 4
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_kc7ms"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 4
+subdivide_depth = 4
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_d0be6"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 4
+subdivide_depth = 4
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ix5i7"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 4
+subdivide_depth = 4
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ecewh"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 4
+subdivide_depth = 4
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_4mfa1"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 4
+subdivide_depth = 4
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_t3fgm"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 4
+subdivide_depth = 4
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_h75bv"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 4
+subdivide_depth = 4
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_h415i"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 4
+subdivide_depth = 4
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ob2cm"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 4
+subdivide_depth = 4
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_7us8p"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 2
+subdivide_depth = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_2ap4g"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_t3mha"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_eqli7"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_0i5nm"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ubsys"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_cu7ef"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ikqaa"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 2
+subdivide_depth = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ivb7t"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 4
+subdivide_depth = 4
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_nrpr1"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 9
+subdivide_depth = 9
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ibfdo"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 9
+subdivide_depth = 9
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_fpwbt"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 9
+subdivide_depth = 9
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_d32pn"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 9
+subdivide_depth = 9
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_8rqao"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 9
+subdivide_depth = 9
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_atwag"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 9
+subdivide_depth = 9
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_6yw2m"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 9
+subdivide_depth = 9
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_lp3t2"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 9
+subdivide_depth = 9
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_25it1"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 9
+subdivide_depth = 9
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_7q8r6"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 4
+subdivide_depth = 4
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_m3cm3"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 2
+subdivide_depth = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_4aofk"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_4jntv"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_12myq"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_we0i5"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_hug4t"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_3u8ml"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_iguva"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 2
+subdivide_depth = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ulkhh"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 4
+subdivide_depth = 4
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_0jvkh"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 9
+subdivide_depth = 9
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_oykuh"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 18
+subdivide_depth = 18
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_brh7c"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 18
+subdivide_depth = 18
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_i1oyj"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 18
+subdivide_depth = 18
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_vx71v"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 18
+subdivide_depth = 18
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_yq8mo"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 18
+subdivide_depth = 18
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_du47k"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 18
+subdivide_depth = 18
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_boifx"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 18
+subdivide_depth = 18
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ibrtl"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 9
+subdivide_depth = 9
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_vbdi3"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 4
+subdivide_depth = 4
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_2nlc5"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 2
+subdivide_depth = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_mh88l"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_6jtmr"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_hubst"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_2rf1f"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_hxah5"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_humgd"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_tq55y"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 2
+subdivide_depth = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_4ny87"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 4
+subdivide_depth = 4
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_5pnye"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 9
+subdivide_depth = 9
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_hw6gq"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 18
+subdivide_depth = 18
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_621ok"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 37
+subdivide_depth = 37
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_1pn3c"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 37
+subdivide_depth = 37
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_6ohki"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 37
+subdivide_depth = 37
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ld3gj"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 37
+subdivide_depth = 37
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_hvebs"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 37
+subdivide_depth = 37
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_jv2bs"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 18
+subdivide_depth = 18
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ogn8l"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 9
+subdivide_depth = 9
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_c8dhh"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 4
+subdivide_depth = 4
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_yiafm"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 2
+subdivide_depth = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_4poh6"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_4eu2k"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_20mv7"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ygqox"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_srcaf"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_wwc8l"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_83qvo"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 2
+subdivide_depth = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_udkjy"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 4
+subdivide_depth = 4
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_nguci"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 9
+subdivide_depth = 9
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_4nr00"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 18
+subdivide_depth = 18
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_wyrof"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 37
+subdivide_depth = 37
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_csalx"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 75
+subdivide_depth = 75
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_eb3iq"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 75
+subdivide_depth = 75
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_hcvqs"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 75
+subdivide_depth = 75
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_i5yhr"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 37
+subdivide_depth = 37
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_8bhqs"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 18
+subdivide_depth = 18
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_0v4rj"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 9
+subdivide_depth = 9
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_31bej"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 4
+subdivide_depth = 4
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_qv70b"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 2
+subdivide_depth = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_4lw44"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ya5u3"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_0lvsh"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_fqpij"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_3d3ox"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_poqv2"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_lqgm0"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 2
+subdivide_depth = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_vys6c"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 4
+subdivide_depth = 4
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_jwq78"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 9
+subdivide_depth = 9
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_w0iku"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 18
+subdivide_depth = 18
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_j1o44"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 37
+subdivide_depth = 37
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_8l6nl"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 75
+subdivide_depth = 75
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_4sxf6"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 150
+subdivide_depth = 150
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_fcbkl"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 75
+subdivide_depth = 75
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_4cj16"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 37
+subdivide_depth = 37
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_u7mr0"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 18
+subdivide_depth = 18
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_c26ba"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 9
+subdivide_depth = 9
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_hv0vb"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 4
+subdivide_depth = 4
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_d47wd"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 2
+subdivide_depth = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_cojq2"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_wh68j"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_r5nrt"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_8si0r"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_chqyw"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_6tret"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_a1y0t"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 2
+subdivide_depth = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_33jxq"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 4
+subdivide_depth = 4
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ygjhu"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 9
+subdivide_depth = 9
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_vpet5"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 18
+subdivide_depth = 18
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_moxq3"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 37
+subdivide_depth = 37
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_vltbr"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 75
+subdivide_depth = 75
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_t8ba8"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 75
+subdivide_depth = 75
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_vehlc"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 75
+subdivide_depth = 75
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ermve"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 37
+subdivide_depth = 37
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_8iyqd"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 18
+subdivide_depth = 18
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_conkm"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 9
+subdivide_depth = 9
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_w6pgx"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 4
+subdivide_depth = 4
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_1q20r"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 2
+subdivide_depth = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_og5tb"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_xrs2q"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_frvm0"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_d3b7v"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_p78gt"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_44l6m"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_dlxpk"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 2
+subdivide_depth = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_12jok"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 4
+subdivide_depth = 4
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_07d8y"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 9
+subdivide_depth = 9
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_u5o3d"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 18
+subdivide_depth = 18
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_qo6sc"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 37
+subdivide_depth = 37
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_2tcq0"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 37
+subdivide_depth = 37
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ikykb"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 37
+subdivide_depth = 37
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_pvqi8"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 37
+subdivide_depth = 37
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_j8lmr"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 37
+subdivide_depth = 37
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_i5hlx"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 18
+subdivide_depth = 18
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_fwee8"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 9
+subdivide_depth = 9
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_dpfs1"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 4
+subdivide_depth = 4
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_k8dh3"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 2
+subdivide_depth = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_kmsvc"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_lktoi"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_bdrwe"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_vk2en"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ybigy"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ec1sn"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ufsv5"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 2
+subdivide_depth = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_iiwe0"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 4
+subdivide_depth = 4
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_kj4lr"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 9
+subdivide_depth = 9
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_liqaj"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 18
+subdivide_depth = 18
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_mhbcj"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 18
+subdivide_depth = 18
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ff4i5"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 18
+subdivide_depth = 18
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_cfamx"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 18
+subdivide_depth = 18
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_xtud7"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 18
+subdivide_depth = 18
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_wrkpj"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 18
+subdivide_depth = 18
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_rtwbs"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 18
+subdivide_depth = 18
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ankhd"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 9
+subdivide_depth = 9
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_vxeqx"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 4
+subdivide_depth = 4
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_p1o30"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 2
+subdivide_depth = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_tygdo"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_he6ay"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_hrify"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_vbpru"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_nj7lh"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_cxux8"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_hwtpt"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 2
+subdivide_depth = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_e0m31"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 4
+subdivide_depth = 4
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_leu7w"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 9
+subdivide_depth = 9
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_u1033"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 9
+subdivide_depth = 9
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_703hp"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 9
+subdivide_depth = 9
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_4k4xt"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 9
+subdivide_depth = 9
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_nc1pj"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 9
+subdivide_depth = 9
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_lfkxi"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 9
+subdivide_depth = 9
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_s044t"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 9
+subdivide_depth = 9
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_riwy4"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 9
+subdivide_depth = 9
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_766te"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 9
+subdivide_depth = 9
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_73to6"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 4
+subdivide_depth = 4
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ctj0d"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 2
+subdivide_depth = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_hryf7"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ajh6j"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_rf2ar"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_qj6h0"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_h80xg"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_5rgvf"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_uuqny"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 2
+subdivide_depth = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_uqles"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 4
+subdivide_depth = 4
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_i18yb"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 4
+subdivide_depth = 4
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_qixbu"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 4
+subdivide_depth = 4
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_68cv8"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 4
+subdivide_depth = 4
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_wqsut"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 4
+subdivide_depth = 4
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_jf23p"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 4
+subdivide_depth = 4
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_qeine"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 4
+subdivide_depth = 4
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_k7vkg"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 4
+subdivide_depth = 4
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_f8bos"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 4
+subdivide_depth = 4
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_umngw"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 4
+subdivide_depth = 4
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_xue1t"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 4
+subdivide_depth = 4
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_vp47n"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 2
+subdivide_depth = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_olbru"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_cpb1q"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_361ap"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_iodgm"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_pwow3"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ryyjs"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_fdd41"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 2
+subdivide_depth = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_6jrn2"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 2
+subdivide_depth = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ub7yv"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 2
+subdivide_depth = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ndqgw"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 2
+subdivide_depth = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_nsana"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 2
+subdivide_depth = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_6ns08"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 2
+subdivide_depth = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_j8f78"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 2
+subdivide_depth = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_6hola"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 2
+subdivide_depth = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_8ktbc"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 2
+subdivide_depth = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_eb2lk"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 2
+subdivide_depth = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_y3t5d"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 2
+subdivide_depth = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_w6y00"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 2
+subdivide_depth = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_tpieo"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 2
+subdivide_depth = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_w70jp"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_dnsqc"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_2g3bn"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_a3axy"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_g8vec"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_kgjfp"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_myy0t"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_d0vq4"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_0v0hh"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_dkfqs"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_bvmeh"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_bxl0l"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_hrac0"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_kay5a"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_1jiul"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_3tmux"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_gn86s"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_k5dke"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_jrr1c"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_xnex3"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ahgbr"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_8nevt"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_tdgfw"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_5d6rv"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ro4am"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_aslis"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_gq174"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_xioj8"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_dqv6p"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_jgfvd"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_thubd"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_8hfem"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_vi370"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_20t6k"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_u6ir4"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_8wkj4"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_mk6fd"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_a6vdv"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_4oryp"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_4lrvg"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ccs6h"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_u0elx"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ltaai"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_tqw4j"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_rxxyf"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_yjxdt"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_otwig"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_5rn6s"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_v2rfb"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_nq0f2"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_50bbt"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_lkfni"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_wqr7n"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_asdyn"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_un8pt"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_hiyhu"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_pyibj"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_o0vhq"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_jxjkm"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_7r2p8"]
+material = ExtResource("2_h1056")
+size = Vector2(150, 150)
+subdivide_width = 1
+subdivide_depth = 1
+
+[node name="stylized_ocean" type="Node3D" unique_id=1169757311]
+script = ExtResource("1_3j3pt")
+lod_count = 10
+ocean_material = ExtResource("2_h1056")
+
+[node name="@MeshInstance3D@44274" type="MeshInstance3D" parent="." unique_id=945995750]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1350, 0, -1350)
+mesh = SubResource("PlaneMesh_h1056")
+
+[node name="@MeshInstance3D@44275" type="MeshInstance3D" parent="." unique_id=712770644]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1350, 0, -1200)
+mesh = SubResource("PlaneMesh_bhpr2")
+
+[node name="@MeshInstance3D@44276" type="MeshInstance3D" parent="." unique_id=556119550]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1350, 0, -1050)
+mesh = SubResource("PlaneMesh_iod61")
+
+[node name="@MeshInstance3D@44277" type="MeshInstance3D" parent="." unique_id=1100854344]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1350, 0, -900)
+mesh = SubResource("PlaneMesh_xslt8")
+
+[node name="@MeshInstance3D@44278" type="MeshInstance3D" parent="." unique_id=56028035]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1350, 0, -750)
+mesh = SubResource("PlaneMesh_bj4u3")
+
+[node name="@MeshInstance3D@44279" type="MeshInstance3D" parent="." unique_id=1681139746]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1350, 0, -600)
+mesh = SubResource("PlaneMesh_vah00")
+
+[node name="@MeshInstance3D@44280" type="MeshInstance3D" parent="." unique_id=1925469825]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1350, 0, -450)
+mesh = SubResource("PlaneMesh_wje3d")
+
+[node name="@MeshInstance3D@44281" type="MeshInstance3D" parent="." unique_id=208457975]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1350, 0, -300)
+mesh = SubResource("PlaneMesh_gausr")
+
+[node name="@MeshInstance3D@44282" type="MeshInstance3D" parent="." unique_id=1719148593]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1350, 0, -150)
+mesh = SubResource("PlaneMesh_vsqhs")
+
+[node name="@MeshInstance3D@44283" type="MeshInstance3D" parent="." unique_id=9842935]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1350, 0, 0)
+mesh = SubResource("PlaneMesh_j4qtj")
+
+[node name="@MeshInstance3D@44284" type="MeshInstance3D" parent="." unique_id=270694197]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1350, 0, 150)
+mesh = SubResource("PlaneMesh_tfq5r")
+
+[node name="@MeshInstance3D@44285" type="MeshInstance3D" parent="." unique_id=517477780]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1350, 0, 300)
+mesh = SubResource("PlaneMesh_ylgx8")
+
+[node name="@MeshInstance3D@44286" type="MeshInstance3D" parent="." unique_id=588779202]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1350, 0, 450)
+mesh = SubResource("PlaneMesh_y5lq8")
+
+[node name="@MeshInstance3D@44287" type="MeshInstance3D" parent="." unique_id=1049097615]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1350, 0, 600)
+mesh = SubResource("PlaneMesh_htk4o")
+
+[node name="@MeshInstance3D@44288" type="MeshInstance3D" parent="." unique_id=1454875601]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1350, 0, 750)
+mesh = SubResource("PlaneMesh_cxsuo")
+
+[node name="@MeshInstance3D@44289" type="MeshInstance3D" parent="." unique_id=1378062002]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1350, 0, 900)
+mesh = SubResource("PlaneMesh_rty2m")
+
+[node name="@MeshInstance3D@44290" type="MeshInstance3D" parent="." unique_id=2034329802]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1350, 0, 1050)
+mesh = SubResource("PlaneMesh_poij1")
+
+[node name="@MeshInstance3D@44291" type="MeshInstance3D" parent="." unique_id=2146624576]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1350, 0, 1200)
+mesh = SubResource("PlaneMesh_ah5yu")
+
+[node name="@MeshInstance3D@44292" type="MeshInstance3D" parent="." unique_id=213518693]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1350, 0, 1350)
+mesh = SubResource("PlaneMesh_22ew2")
+
+[node name="@MeshInstance3D@44293" type="MeshInstance3D" parent="." unique_id=116467458]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1200, 0, -1350)
+mesh = SubResource("PlaneMesh_rwjjl")
+
+[node name="@MeshInstance3D@44294" type="MeshInstance3D" parent="." unique_id=197253712]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1200, 0, -1200)
+mesh = SubResource("PlaneMesh_5vdp4")
+
+[node name="@MeshInstance3D@44295" type="MeshInstance3D" parent="." unique_id=1337190884]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1200, 0, -1050)
+mesh = SubResource("PlaneMesh_62vjd")
+
+[node name="@MeshInstance3D@44296" type="MeshInstance3D" parent="." unique_id=1915602515]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1200, 0, -900)
+mesh = SubResource("PlaneMesh_xmudv")
+
+[node name="@MeshInstance3D@44297" type="MeshInstance3D" parent="." unique_id=1859605512]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1200, 0, -750)
+mesh = SubResource("PlaneMesh_5jvtp")
+
+[node name="@MeshInstance3D@44298" type="MeshInstance3D" parent="." unique_id=598487356]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1200, 0, -600)
+mesh = SubResource("PlaneMesh_84jhf")
+
+[node name="@MeshInstance3D@44299" type="MeshInstance3D" parent="." unique_id=445875377]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1200, 0, -450)
+mesh = SubResource("PlaneMesh_d7kg8")
+
+[node name="@MeshInstance3D@44300" type="MeshInstance3D" parent="." unique_id=741092578]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1200, 0, -300)
+mesh = SubResource("PlaneMesh_q83rw")
+
+[node name="@MeshInstance3D@44301" type="MeshInstance3D" parent="." unique_id=1213203141]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1200, 0, -150)
+mesh = SubResource("PlaneMesh_gl86b")
+
+[node name="@MeshInstance3D@44302" type="MeshInstance3D" parent="." unique_id=2143191870]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1200, 0, 0)
+mesh = SubResource("PlaneMesh_uybhy")
+
+[node name="@MeshInstance3D@44303" type="MeshInstance3D" parent="." unique_id=480334027]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1200, 0, 150)
+mesh = SubResource("PlaneMesh_dw2fu")
+
+[node name="@MeshInstance3D@44304" type="MeshInstance3D" parent="." unique_id=1139051745]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1200, 0, 300)
+mesh = SubResource("PlaneMesh_0uual")
+
+[node name="@MeshInstance3D@44305" type="MeshInstance3D" parent="." unique_id=456138037]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1200, 0, 450)
+mesh = SubResource("PlaneMesh_0f7mp")
+
+[node name="@MeshInstance3D@44306" type="MeshInstance3D" parent="." unique_id=655251967]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1200, 0, 600)
+mesh = SubResource("PlaneMesh_aorwf")
+
+[node name="@MeshInstance3D@44307" type="MeshInstance3D" parent="." unique_id=622529568]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1200, 0, 750)
+mesh = SubResource("PlaneMesh_ba6qj")
+
+[node name="@MeshInstance3D@44308" type="MeshInstance3D" parent="." unique_id=627809350]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1200, 0, 900)
+mesh = SubResource("PlaneMesh_5lit1")
+
+[node name="@MeshInstance3D@44309" type="MeshInstance3D" parent="." unique_id=1067466389]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1200, 0, 1050)
+mesh = SubResource("PlaneMesh_q72vo")
+
+[node name="@MeshInstance3D@44310" type="MeshInstance3D" parent="." unique_id=1336059201]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1200, 0, 1200)
+mesh = SubResource("PlaneMesh_7wd42")
+
+[node name="@MeshInstance3D@44311" type="MeshInstance3D" parent="." unique_id=698478885]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1200, 0, 1350)
+mesh = SubResource("PlaneMesh_7ty15")
+
+[node name="@MeshInstance3D@44312" type="MeshInstance3D" parent="." unique_id=1110007749]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1050, 0, -1350)
+mesh = SubResource("PlaneMesh_x8tkx")
+
+[node name="@MeshInstance3D@44313" type="MeshInstance3D" parent="." unique_id=686877365]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1050, 0, -1200)
+mesh = SubResource("PlaneMesh_v8gm4")
+
+[node name="@MeshInstance3D@44314" type="MeshInstance3D" parent="." unique_id=1362742696]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1050, 0, -1050)
+mesh = SubResource("PlaneMesh_l1iij")
+
+[node name="@MeshInstance3D@44315" type="MeshInstance3D" parent="." unique_id=502310521]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1050, 0, -900)
+mesh = SubResource("PlaneMesh_e3wl2")
+
+[node name="@MeshInstance3D@44316" type="MeshInstance3D" parent="." unique_id=456779799]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1050, 0, -750)
+mesh = SubResource("PlaneMesh_utrqh")
+
+[node name="@MeshInstance3D@44317" type="MeshInstance3D" parent="." unique_id=790861805]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1050, 0, -600)
+mesh = SubResource("PlaneMesh_b6enr")
+
+[node name="@MeshInstance3D@44318" type="MeshInstance3D" parent="." unique_id=1485104987]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1050, 0, -450)
+mesh = SubResource("PlaneMesh_xot3m")
+
+[node name="@MeshInstance3D@44319" type="MeshInstance3D" parent="." unique_id=574221117]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1050, 0, -300)
+mesh = SubResource("PlaneMesh_vupmt")
+
+[node name="@MeshInstance3D@44320" type="MeshInstance3D" parent="." unique_id=749820433]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1050, 0, -150)
+mesh = SubResource("PlaneMesh_siahw")
+
+[node name="@MeshInstance3D@44321" type="MeshInstance3D" parent="." unique_id=299730281]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1050, 0, 0)
+mesh = SubResource("PlaneMesh_g1k62")
+
+[node name="@MeshInstance3D@44322" type="MeshInstance3D" parent="." unique_id=175071722]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1050, 0, 150)
+mesh = SubResource("PlaneMesh_ay7fm")
+
+[node name="@MeshInstance3D@44323" type="MeshInstance3D" parent="." unique_id=2075027674]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1050, 0, 300)
+mesh = SubResource("PlaneMesh_s4md8")
+
+[node name="@MeshInstance3D@44324" type="MeshInstance3D" parent="." unique_id=1902191299]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1050, 0, 450)
+mesh = SubResource("PlaneMesh_4o84d")
+
+[node name="@MeshInstance3D@44325" type="MeshInstance3D" parent="." unique_id=340277721]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1050, 0, 600)
+mesh = SubResource("PlaneMesh_8caqw")
+
+[node name="@MeshInstance3D@44326" type="MeshInstance3D" parent="." unique_id=1760097253]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1050, 0, 750)
+mesh = SubResource("PlaneMesh_peota")
+
+[node name="@MeshInstance3D@44327" type="MeshInstance3D" parent="." unique_id=969263341]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1050, 0, 900)
+mesh = SubResource("PlaneMesh_3urnj")
+
+[node name="@MeshInstance3D@44328" type="MeshInstance3D" parent="." unique_id=148545370]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1050, 0, 1050)
+mesh = SubResource("PlaneMesh_yggnv")
+
+[node name="@MeshInstance3D@44329" type="MeshInstance3D" parent="." unique_id=457646436]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1050, 0, 1200)
+mesh = SubResource("PlaneMesh_qpi0k")
+
+[node name="@MeshInstance3D@44330" type="MeshInstance3D" parent="." unique_id=374845066]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1050, 0, 1350)
+mesh = SubResource("PlaneMesh_vq4rk")
+
+[node name="@MeshInstance3D@44331" type="MeshInstance3D" parent="." unique_id=1269960486]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -900, 0, -1350)
+mesh = SubResource("PlaneMesh_podnu")
+
+[node name="@MeshInstance3D@44332" type="MeshInstance3D" parent="." unique_id=1701184066]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -900, 0, -1200)
+mesh = SubResource("PlaneMesh_hf68u")
+
+[node name="@MeshInstance3D@44333" type="MeshInstance3D" parent="." unique_id=1231991520]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -900, 0, -1050)
+mesh = SubResource("PlaneMesh_bc5wf")
+
+[node name="@MeshInstance3D@44334" type="MeshInstance3D" parent="." unique_id=984140141]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -900, 0, -900)
+mesh = SubResource("PlaneMesh_xidts")
+
+[node name="@MeshInstance3D@44335" type="MeshInstance3D" parent="." unique_id=252859589]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -900, 0, -750)
+mesh = SubResource("PlaneMesh_toqhe")
+
+[node name="@MeshInstance3D@44336" type="MeshInstance3D" parent="." unique_id=2071571346]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -900, 0, -600)
+mesh = SubResource("PlaneMesh_hlpeh")
+
+[node name="@MeshInstance3D@44337" type="MeshInstance3D" parent="." unique_id=1639600718]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -900, 0, -450)
+mesh = SubResource("PlaneMesh_rah7h")
+
+[node name="@MeshInstance3D@44338" type="MeshInstance3D" parent="." unique_id=1932633619]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -900, 0, -300)
+mesh = SubResource("PlaneMesh_8515f")
+
+[node name="@MeshInstance3D@44339" type="MeshInstance3D" parent="." unique_id=622837523]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -900, 0, -150)
+mesh = SubResource("PlaneMesh_lko83")
+
+[node name="@MeshInstance3D@44340" type="MeshInstance3D" parent="." unique_id=357379814]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -900, 0, 0)
+mesh = SubResource("PlaneMesh_8e2ry")
+
+[node name="@MeshInstance3D@44341" type="MeshInstance3D" parent="." unique_id=1284583616]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -900, 0, 150)
+mesh = SubResource("PlaneMesh_hh8am")
+
+[node name="@MeshInstance3D@44342" type="MeshInstance3D" parent="." unique_id=158620240]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -900, 0, 300)
+mesh = SubResource("PlaneMesh_6lapo")
+
+[node name="@MeshInstance3D@44343" type="MeshInstance3D" parent="." unique_id=1316175842]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -900, 0, 450)
+mesh = SubResource("PlaneMesh_mtm1c")
+
+[node name="@MeshInstance3D@44344" type="MeshInstance3D" parent="." unique_id=206487238]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -900, 0, 600)
+mesh = SubResource("PlaneMesh_lgcj8")
+
+[node name="@MeshInstance3D@44345" type="MeshInstance3D" parent="." unique_id=86206210]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -900, 0, 750)
+mesh = SubResource("PlaneMesh_cwjio")
+
+[node name="@MeshInstance3D@44346" type="MeshInstance3D" parent="." unique_id=2095507858]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -900, 0, 900)
+mesh = SubResource("PlaneMesh_25rvi")
+
+[node name="@MeshInstance3D@44347" type="MeshInstance3D" parent="." unique_id=1415318954]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -900, 0, 1050)
+mesh = SubResource("PlaneMesh_jdo6l")
+
+[node name="@MeshInstance3D@44348" type="MeshInstance3D" parent="." unique_id=1741229240]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -900, 0, 1200)
+mesh = SubResource("PlaneMesh_lumfm")
+
+[node name="@MeshInstance3D@44349" type="MeshInstance3D" parent="." unique_id=1991257308]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -900, 0, 1350)
+mesh = SubResource("PlaneMesh_1os2f")
+
+[node name="@MeshInstance3D@44350" type="MeshInstance3D" parent="." unique_id=1357037649]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -750, 0, -1350)
+mesh = SubResource("PlaneMesh_330bm")
+
+[node name="@MeshInstance3D@44351" type="MeshInstance3D" parent="." unique_id=370576636]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -750, 0, -1200)
+mesh = SubResource("PlaneMesh_5jatl")
+
+[node name="@MeshInstance3D@44352" type="MeshInstance3D" parent="." unique_id=283558882]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -750, 0, -1050)
+mesh = SubResource("PlaneMesh_tlswh")
+
+[node name="@MeshInstance3D@44353" type="MeshInstance3D" parent="." unique_id=1455964092]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -750, 0, -900)
+mesh = SubResource("PlaneMesh_5d4ul")
+
+[node name="@MeshInstance3D@44354" type="MeshInstance3D" parent="." unique_id=1534601654]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -750, 0, -750)
+mesh = SubResource("PlaneMesh_oeaoj")
+
+[node name="@MeshInstance3D@44355" type="MeshInstance3D" parent="." unique_id=613726911]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -750, 0, -600)
+mesh = SubResource("PlaneMesh_it7wj")
+
+[node name="@MeshInstance3D@44356" type="MeshInstance3D" parent="." unique_id=254374886]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -750, 0, -450)
+mesh = SubResource("PlaneMesh_kc7ms")
+
+[node name="@MeshInstance3D@44357" type="MeshInstance3D" parent="." unique_id=919702865]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -750, 0, -300)
+mesh = SubResource("PlaneMesh_d0be6")
+
+[node name="@MeshInstance3D@44358" type="MeshInstance3D" parent="." unique_id=599497300]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -750, 0, -150)
+mesh = SubResource("PlaneMesh_ix5i7")
+
+[node name="@MeshInstance3D@44359" type="MeshInstance3D" parent="." unique_id=1421315169]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -750, 0, 0)
+mesh = SubResource("PlaneMesh_ecewh")
+
+[node name="@MeshInstance3D@44360" type="MeshInstance3D" parent="." unique_id=1535646233]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -750, 0, 150)
+mesh = SubResource("PlaneMesh_4mfa1")
+
+[node name="@MeshInstance3D@44361" type="MeshInstance3D" parent="." unique_id=1722669867]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -750, 0, 300)
+mesh = SubResource("PlaneMesh_t3fgm")
+
+[node name="@MeshInstance3D@44362" type="MeshInstance3D" parent="." unique_id=298555370]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -750, 0, 450)
+mesh = SubResource("PlaneMesh_h75bv")
+
+[node name="@MeshInstance3D@44363" type="MeshInstance3D" parent="." unique_id=1133393093]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -750, 0, 600)
+mesh = SubResource("PlaneMesh_h415i")
+
+[node name="@MeshInstance3D@44364" type="MeshInstance3D" parent="." unique_id=957599408]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -750, 0, 750)
+mesh = SubResource("PlaneMesh_ob2cm")
+
+[node name="@MeshInstance3D@44365" type="MeshInstance3D" parent="." unique_id=1335905086]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -750, 0, 900)
+mesh = SubResource("PlaneMesh_7us8p")
+
+[node name="@MeshInstance3D@44366" type="MeshInstance3D" parent="." unique_id=539871621]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -750, 0, 1050)
+mesh = SubResource("PlaneMesh_2ap4g")
+
+[node name="@MeshInstance3D@44367" type="MeshInstance3D" parent="." unique_id=1159594642]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -750, 0, 1200)
+mesh = SubResource("PlaneMesh_t3mha")
+
+[node name="@MeshInstance3D@44368" type="MeshInstance3D" parent="." unique_id=1211341104]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -750, 0, 1350)
+mesh = SubResource("PlaneMesh_eqli7")
+
+[node name="@MeshInstance3D@44369" type="MeshInstance3D" parent="." unique_id=56847169]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -600, 0, -1350)
+mesh = SubResource("PlaneMesh_0i5nm")
+
+[node name="@MeshInstance3D@44370" type="MeshInstance3D" parent="." unique_id=560848662]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -600, 0, -1200)
+mesh = SubResource("PlaneMesh_ubsys")
+
+[node name="@MeshInstance3D@44371" type="MeshInstance3D" parent="." unique_id=1885026224]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -600, 0, -1050)
+mesh = SubResource("PlaneMesh_cu7ef")
+
+[node name="@MeshInstance3D@44372" type="MeshInstance3D" parent="." unique_id=1460202150]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -600, 0, -900)
+mesh = SubResource("PlaneMesh_ikqaa")
+
+[node name="@MeshInstance3D@44373" type="MeshInstance3D" parent="." unique_id=392691295]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -600, 0, -750)
+mesh = SubResource("PlaneMesh_ivb7t")
+
+[node name="@MeshInstance3D@44374" type="MeshInstance3D" parent="." unique_id=796562924]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -600, 0, -600)
+mesh = SubResource("PlaneMesh_nrpr1")
+
+[node name="@MeshInstance3D@44375" type="MeshInstance3D" parent="." unique_id=665632480]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -600, 0, -450)
+mesh = SubResource("PlaneMesh_ibfdo")
+
+[node name="@MeshInstance3D@44376" type="MeshInstance3D" parent="." unique_id=1758750778]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -600, 0, -300)
+mesh = SubResource("PlaneMesh_fpwbt")
+
+[node name="@MeshInstance3D@44377" type="MeshInstance3D" parent="." unique_id=1174996720]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -600, 0, -150)
+mesh = SubResource("PlaneMesh_d32pn")
+
+[node name="@MeshInstance3D@44378" type="MeshInstance3D" parent="." unique_id=1861667784]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -600, 0, 0)
+mesh = SubResource("PlaneMesh_8rqao")
+
+[node name="@MeshInstance3D@44379" type="MeshInstance3D" parent="." unique_id=1844812023]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -600, 0, 150)
+mesh = SubResource("PlaneMesh_atwag")
+
+[node name="@MeshInstance3D@44380" type="MeshInstance3D" parent="." unique_id=205772764]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -600, 0, 300)
+mesh = SubResource("PlaneMesh_6yw2m")
+
+[node name="@MeshInstance3D@44381" type="MeshInstance3D" parent="." unique_id=1155529480]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -600, 0, 450)
+mesh = SubResource("PlaneMesh_lp3t2")
+
+[node name="@MeshInstance3D@44382" type="MeshInstance3D" parent="." unique_id=63671453]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -600, 0, 600)
+mesh = SubResource("PlaneMesh_25it1")
+
+[node name="@MeshInstance3D@44383" type="MeshInstance3D" parent="." unique_id=1923808258]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -600, 0, 750)
+mesh = SubResource("PlaneMesh_7q8r6")
+
+[node name="@MeshInstance3D@44384" type="MeshInstance3D" parent="." unique_id=977695921]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -600, 0, 900)
+mesh = SubResource("PlaneMesh_m3cm3")
+
+[node name="@MeshInstance3D@44385" type="MeshInstance3D" parent="." unique_id=1965678543]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -600, 0, 1050)
+mesh = SubResource("PlaneMesh_4aofk")
+
+[node name="@MeshInstance3D@44386" type="MeshInstance3D" parent="." unique_id=1438523134]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -600, 0, 1200)
+mesh = SubResource("PlaneMesh_4jntv")
+
+[node name="@MeshInstance3D@44387" type="MeshInstance3D" parent="." unique_id=376230554]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -600, 0, 1350)
+mesh = SubResource("PlaneMesh_12myq")
+
+[node name="@MeshInstance3D@44388" type="MeshInstance3D" parent="." unique_id=474299429]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -450, 0, -1350)
+mesh = SubResource("PlaneMesh_we0i5")
+
+[node name="@MeshInstance3D@44389" type="MeshInstance3D" parent="." unique_id=1028220118]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -450, 0, -1200)
+mesh = SubResource("PlaneMesh_hug4t")
+
+[node name="@MeshInstance3D@44390" type="MeshInstance3D" parent="." unique_id=1618522290]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -450, 0, -1050)
+mesh = SubResource("PlaneMesh_3u8ml")
+
+[node name="@MeshInstance3D@44391" type="MeshInstance3D" parent="." unique_id=1406584345]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -450, 0, -900)
+mesh = SubResource("PlaneMesh_iguva")
+
+[node name="@MeshInstance3D@44392" type="MeshInstance3D" parent="." unique_id=1462603208]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -450, 0, -750)
+mesh = SubResource("PlaneMesh_ulkhh")
+
+[node name="@MeshInstance3D@44393" type="MeshInstance3D" parent="." unique_id=137648861]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -450, 0, -600)
+mesh = SubResource("PlaneMesh_0jvkh")
+
+[node name="@MeshInstance3D@44394" type="MeshInstance3D" parent="." unique_id=129696262]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -450, 0, -450)
+mesh = SubResource("PlaneMesh_oykuh")
+
+[node name="@MeshInstance3D@44395" type="MeshInstance3D" parent="." unique_id=626542294]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -450, 0, -300)
+mesh = SubResource("PlaneMesh_brh7c")
+
+[node name="@MeshInstance3D@44396" type="MeshInstance3D" parent="." unique_id=1121949225]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -450, 0, -150)
+mesh = SubResource("PlaneMesh_i1oyj")
+
+[node name="@MeshInstance3D@44397" type="MeshInstance3D" parent="." unique_id=1484652544]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -450, 0, 0)
+mesh = SubResource("PlaneMesh_vx71v")
+
+[node name="@MeshInstance3D@44398" type="MeshInstance3D" parent="." unique_id=1681164340]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -450, 0, 150)
+mesh = SubResource("PlaneMesh_yq8mo")
+
+[node name="@MeshInstance3D@44399" type="MeshInstance3D" parent="." unique_id=1141023207]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -450, 0, 300)
+mesh = SubResource("PlaneMesh_du47k")
+
+[node name="@MeshInstance3D@44400" type="MeshInstance3D" parent="." unique_id=1766153397]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -450, 0, 450)
+mesh = SubResource("PlaneMesh_boifx")
+
+[node name="@MeshInstance3D@44401" type="MeshInstance3D" parent="." unique_id=946491228]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -450, 0, 600)
+mesh = SubResource("PlaneMesh_ibrtl")
+
+[node name="@MeshInstance3D@44402" type="MeshInstance3D" parent="." unique_id=257013018]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -450, 0, 750)
+mesh = SubResource("PlaneMesh_vbdi3")
+
+[node name="@MeshInstance3D@44403" type="MeshInstance3D" parent="." unique_id=1643517349]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -450, 0, 900)
+mesh = SubResource("PlaneMesh_2nlc5")
+
+[node name="@MeshInstance3D@44404" type="MeshInstance3D" parent="." unique_id=785191082]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -450, 0, 1050)
+mesh = SubResource("PlaneMesh_mh88l")
+
+[node name="@MeshInstance3D@44405" type="MeshInstance3D" parent="." unique_id=394620322]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -450, 0, 1200)
+mesh = SubResource("PlaneMesh_6jtmr")
+
+[node name="@MeshInstance3D@44406" type="MeshInstance3D" parent="." unique_id=151671607]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -450, 0, 1350)
+mesh = SubResource("PlaneMesh_hubst")
+
+[node name="@MeshInstance3D@44407" type="MeshInstance3D" parent="." unique_id=831302269]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -300, 0, -1350)
+mesh = SubResource("PlaneMesh_2rf1f")
+
+[node name="@MeshInstance3D@44408" type="MeshInstance3D" parent="." unique_id=114855249]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -300, 0, -1200)
+mesh = SubResource("PlaneMesh_hxah5")
+
+[node name="@MeshInstance3D@44409" type="MeshInstance3D" parent="." unique_id=955886092]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -300, 0, -1050)
+mesh = SubResource("PlaneMesh_humgd")
+
+[node name="@MeshInstance3D@44410" type="MeshInstance3D" parent="." unique_id=888683529]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -300, 0, -900)
+mesh = SubResource("PlaneMesh_tq55y")
+
+[node name="@MeshInstance3D@44411" type="MeshInstance3D" parent="." unique_id=1642666100]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -300, 0, -750)
+mesh = SubResource("PlaneMesh_4ny87")
+
+[node name="@MeshInstance3D@44412" type="MeshInstance3D" parent="." unique_id=1009160075]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -300, 0, -600)
+mesh = SubResource("PlaneMesh_5pnye")
+
+[node name="@MeshInstance3D@44413" type="MeshInstance3D" parent="." unique_id=1101626077]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -300, 0, -450)
+mesh = SubResource("PlaneMesh_hw6gq")
+
+[node name="@MeshInstance3D@44414" type="MeshInstance3D" parent="." unique_id=1972333720]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -300, 0, -300)
+mesh = SubResource("PlaneMesh_621ok")
+
+[node name="@MeshInstance3D@44415" type="MeshInstance3D" parent="." unique_id=247941331]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -300, 0, -150)
+mesh = SubResource("PlaneMesh_1pn3c")
+
+[node name="@MeshInstance3D@44416" type="MeshInstance3D" parent="." unique_id=416971619]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -300, 0, 0)
+mesh = SubResource("PlaneMesh_6ohki")
+
+[node name="@MeshInstance3D@44417" type="MeshInstance3D" parent="." unique_id=510262358]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -300, 0, 150)
+mesh = SubResource("PlaneMesh_ld3gj")
+
+[node name="@MeshInstance3D@44418" type="MeshInstance3D" parent="." unique_id=909657795]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -300, 0, 300)
+mesh = SubResource("PlaneMesh_hvebs")
+
+[node name="@MeshInstance3D@44419" type="MeshInstance3D" parent="." unique_id=1411069513]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -300, 0, 450)
+mesh = SubResource("PlaneMesh_jv2bs")
+
+[node name="@MeshInstance3D@44420" type="MeshInstance3D" parent="." unique_id=621358882]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -300, 0, 600)
+mesh = SubResource("PlaneMesh_ogn8l")
+
+[node name="@MeshInstance3D@44421" type="MeshInstance3D" parent="." unique_id=2043776142]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -300, 0, 750)
+mesh = SubResource("PlaneMesh_c8dhh")
+
+[node name="@MeshInstance3D@44422" type="MeshInstance3D" parent="." unique_id=1998191586]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -300, 0, 900)
+mesh = SubResource("PlaneMesh_yiafm")
+
+[node name="@MeshInstance3D@44423" type="MeshInstance3D" parent="." unique_id=1575750186]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -300, 0, 1050)
+mesh = SubResource("PlaneMesh_4poh6")
+
+[node name="@MeshInstance3D@44424" type="MeshInstance3D" parent="." unique_id=568414510]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -300, 0, 1200)
+mesh = SubResource("PlaneMesh_4eu2k")
+
+[node name="@MeshInstance3D@44425" type="MeshInstance3D" parent="." unique_id=6415844]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -300, 0, 1350)
+mesh = SubResource("PlaneMesh_20mv7")
+
+[node name="@MeshInstance3D@44426" type="MeshInstance3D" parent="." unique_id=2518794]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -150, 0, -1350)
+mesh = SubResource("PlaneMesh_ygqox")
+
+[node name="@MeshInstance3D@44427" type="MeshInstance3D" parent="." unique_id=1726043085]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -150, 0, -1200)
+mesh = SubResource("PlaneMesh_srcaf")
+
+[node name="@MeshInstance3D@44428" type="MeshInstance3D" parent="." unique_id=353501758]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -150, 0, -1050)
+mesh = SubResource("PlaneMesh_wwc8l")
+
+[node name="@MeshInstance3D@44429" type="MeshInstance3D" parent="." unique_id=433468934]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -150, 0, -900)
+mesh = SubResource("PlaneMesh_83qvo")
+
+[node name="@MeshInstance3D@44430" type="MeshInstance3D" parent="." unique_id=779903339]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -150, 0, -750)
+mesh = SubResource("PlaneMesh_udkjy")
+
+[node name="@MeshInstance3D@44431" type="MeshInstance3D" parent="." unique_id=1937352710]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -150, 0, -600)
+mesh = SubResource("PlaneMesh_nguci")
+
+[node name="@MeshInstance3D@44432" type="MeshInstance3D" parent="." unique_id=296911710]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -150, 0, -450)
+mesh = SubResource("PlaneMesh_4nr00")
+
+[node name="@MeshInstance3D@44433" type="MeshInstance3D" parent="." unique_id=1921559691]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -150, 0, -300)
+mesh = SubResource("PlaneMesh_wyrof")
+
+[node name="@MeshInstance3D@44434" type="MeshInstance3D" parent="." unique_id=339947844]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -150, 0, -150)
+mesh = SubResource("PlaneMesh_csalx")
+
+[node name="@MeshInstance3D@44435" type="MeshInstance3D" parent="." unique_id=1171541887]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -150, 0, 0)
+mesh = SubResource("PlaneMesh_eb3iq")
+
+[node name="@MeshInstance3D@44436" type="MeshInstance3D" parent="." unique_id=1877464122]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -150, 0, 150)
+mesh = SubResource("PlaneMesh_hcvqs")
+
+[node name="@MeshInstance3D@44437" type="MeshInstance3D" parent="." unique_id=238631185]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -150, 0, 300)
+mesh = SubResource("PlaneMesh_i5yhr")
+
+[node name="@MeshInstance3D@44438" type="MeshInstance3D" parent="." unique_id=712044504]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -150, 0, 450)
+mesh = SubResource("PlaneMesh_8bhqs")
+
+[node name="@MeshInstance3D@44439" type="MeshInstance3D" parent="." unique_id=296120393]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -150, 0, 600)
+mesh = SubResource("PlaneMesh_0v4rj")
+
+[node name="@MeshInstance3D@44440" type="MeshInstance3D" parent="." unique_id=619272488]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -150, 0, 750)
+mesh = SubResource("PlaneMesh_31bej")
+
+[node name="@MeshInstance3D@44441" type="MeshInstance3D" parent="." unique_id=1745596109]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -150, 0, 900)
+mesh = SubResource("PlaneMesh_qv70b")
+
+[node name="@MeshInstance3D@44442" type="MeshInstance3D" parent="." unique_id=666157522]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -150, 0, 1050)
+mesh = SubResource("PlaneMesh_4lw44")
+
+[node name="@MeshInstance3D@44443" type="MeshInstance3D" parent="." unique_id=589918983]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -150, 0, 1200)
+mesh = SubResource("PlaneMesh_ya5u3")
+
+[node name="@MeshInstance3D@44444" type="MeshInstance3D" parent="." unique_id=1518856486]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -150, 0, 1350)
+mesh = SubResource("PlaneMesh_0lvsh")
+
+[node name="@MeshInstance3D@44445" type="MeshInstance3D" parent="." unique_id=709094330]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1350)
+mesh = SubResource("PlaneMesh_fqpij")
+
+[node name="@MeshInstance3D@44446" type="MeshInstance3D" parent="." unique_id=1855928891]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1200)
+mesh = SubResource("PlaneMesh_3d3ox")
+
+[node name="@MeshInstance3D@44447" type="MeshInstance3D" parent="." unique_id=600912184]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1050)
+mesh = SubResource("PlaneMesh_poqv2")
+
+[node name="@MeshInstance3D@44448" type="MeshInstance3D" parent="." unique_id=1228502302]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -900)
+mesh = SubResource("PlaneMesh_lqgm0")
+
+[node name="@MeshInstance3D@44449" type="MeshInstance3D" parent="." unique_id=746538672]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -750)
+mesh = SubResource("PlaneMesh_vys6c")
+
+[node name="@MeshInstance3D@44450" type="MeshInstance3D" parent="." unique_id=1067546063]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -600)
+mesh = SubResource("PlaneMesh_jwq78")
+
+[node name="@MeshInstance3D@44451" type="MeshInstance3D" parent="." unique_id=1556712733]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -450)
+mesh = SubResource("PlaneMesh_w0iku")
+
+[node name="@MeshInstance3D@44452" type="MeshInstance3D" parent="." unique_id=34118417]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -300)
+mesh = SubResource("PlaneMesh_j1o44")
+
+[node name="@MeshInstance3D@44453" type="MeshInstance3D" parent="." unique_id=855298067]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -150)
+mesh = SubResource("PlaneMesh_8l6nl")
+
+[node name="@MeshInstance3D@44454" type="MeshInstance3D" parent="." unique_id=1606114665]
+mesh = SubResource("PlaneMesh_4sxf6")
+
+[node name="@MeshInstance3D@44455" type="MeshInstance3D" parent="." unique_id=265770728]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 150)
+mesh = SubResource("PlaneMesh_fcbkl")
+
+[node name="@MeshInstance3D@44456" type="MeshInstance3D" parent="." unique_id=140320391]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 300)
+mesh = SubResource("PlaneMesh_4cj16")
+
+[node name="@MeshInstance3D@44457" type="MeshInstance3D" parent="." unique_id=1296619334]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 450)
+mesh = SubResource("PlaneMesh_u7mr0")
+
+[node name="@MeshInstance3D@44458" type="MeshInstance3D" parent="." unique_id=535338436]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 600)
+mesh = SubResource("PlaneMesh_c26ba")
+
+[node name="@MeshInstance3D@44459" type="MeshInstance3D" parent="." unique_id=960358872]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 750)
+mesh = SubResource("PlaneMesh_hv0vb")
+
+[node name="@MeshInstance3D@44460" type="MeshInstance3D" parent="." unique_id=1690284616]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 900)
+mesh = SubResource("PlaneMesh_d47wd")
+
+[node name="@MeshInstance3D@44461" type="MeshInstance3D" parent="." unique_id=2038599060]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1050)
+mesh = SubResource("PlaneMesh_cojq2")
+
+[node name="@MeshInstance3D@44462" type="MeshInstance3D" parent="." unique_id=4154905]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1200)
+mesh = SubResource("PlaneMesh_wh68j")
+
+[node name="@MeshInstance3D@44463" type="MeshInstance3D" parent="." unique_id=2139821357]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1350)
+mesh = SubResource("PlaneMesh_r5nrt")
+
+[node name="@MeshInstance3D@44464" type="MeshInstance3D" parent="." unique_id=1653413717]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 150, 0, -1350)
+mesh = SubResource("PlaneMesh_8si0r")
+
+[node name="@MeshInstance3D@44465" type="MeshInstance3D" parent="." unique_id=97975012]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 150, 0, -1200)
+mesh = SubResource("PlaneMesh_chqyw")
+
+[node name="@MeshInstance3D@44466" type="MeshInstance3D" parent="." unique_id=1401673351]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 150, 0, -1050)
+mesh = SubResource("PlaneMesh_6tret")
+
+[node name="@MeshInstance3D@44467" type="MeshInstance3D" parent="." unique_id=1303975360]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 150, 0, -900)
+mesh = SubResource("PlaneMesh_a1y0t")
+
+[node name="@MeshInstance3D@44468" type="MeshInstance3D" parent="." unique_id=507892944]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 150, 0, -750)
+mesh = SubResource("PlaneMesh_33jxq")
+
+[node name="@MeshInstance3D@44469" type="MeshInstance3D" parent="." unique_id=4157107]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 150, 0, -600)
+mesh = SubResource("PlaneMesh_ygjhu")
+
+[node name="@MeshInstance3D@44470" type="MeshInstance3D" parent="." unique_id=1498235074]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 150, 0, -450)
+mesh = SubResource("PlaneMesh_vpet5")
+
+[node name="@MeshInstance3D@44471" type="MeshInstance3D" parent="." unique_id=786893151]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 150, 0, -300)
+mesh = SubResource("PlaneMesh_moxq3")
+
+[node name="@MeshInstance3D@44472" type="MeshInstance3D" parent="." unique_id=1283166063]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 150, 0, -150)
+mesh = SubResource("PlaneMesh_vltbr")
+
+[node name="@MeshInstance3D@44473" type="MeshInstance3D" parent="." unique_id=143601675]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 150, 0, 0)
+mesh = SubResource("PlaneMesh_t8ba8")
+
+[node name="@MeshInstance3D@44474" type="MeshInstance3D" parent="." unique_id=1413508104]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 150, 0, 150)
+mesh = SubResource("PlaneMesh_vehlc")
+
+[node name="@MeshInstance3D@44475" type="MeshInstance3D" parent="." unique_id=795923809]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 150, 0, 300)
+mesh = SubResource("PlaneMesh_ermve")
+
+[node name="@MeshInstance3D@44476" type="MeshInstance3D" parent="." unique_id=1638359110]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 150, 0, 450)
+mesh = SubResource("PlaneMesh_8iyqd")
+
+[node name="@MeshInstance3D@44477" type="MeshInstance3D" parent="." unique_id=1273878239]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 150, 0, 600)
+mesh = SubResource("PlaneMesh_conkm")
+
+[node name="@MeshInstance3D@44478" type="MeshInstance3D" parent="." unique_id=431995767]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 150, 0, 750)
+mesh = SubResource("PlaneMesh_w6pgx")
+
+[node name="@MeshInstance3D@44479" type="MeshInstance3D" parent="." unique_id=1161311975]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 150, 0, 900)
+mesh = SubResource("PlaneMesh_1q20r")
+
+[node name="@MeshInstance3D@44480" type="MeshInstance3D" parent="." unique_id=1676454094]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 150, 0, 1050)
+mesh = SubResource("PlaneMesh_og5tb")
+
+[node name="@MeshInstance3D@44481" type="MeshInstance3D" parent="." unique_id=774914116]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 150, 0, 1200)
+mesh = SubResource("PlaneMesh_xrs2q")
+
+[node name="@MeshInstance3D@44482" type="MeshInstance3D" parent="." unique_id=1029864435]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 150, 0, 1350)
+mesh = SubResource("PlaneMesh_frvm0")
+
+[node name="@MeshInstance3D@44483" type="MeshInstance3D" parent="." unique_id=1371536609]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 300, 0, -1350)
+mesh = SubResource("PlaneMesh_d3b7v")
+
+[node name="@MeshInstance3D@44484" type="MeshInstance3D" parent="." unique_id=509430165]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 300, 0, -1200)
+mesh = SubResource("PlaneMesh_p78gt")
+
+[node name="@MeshInstance3D@44485" type="MeshInstance3D" parent="." unique_id=1134759305]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 300, 0, -1050)
+mesh = SubResource("PlaneMesh_44l6m")
+
+[node name="@MeshInstance3D@44486" type="MeshInstance3D" parent="." unique_id=1762317259]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 300, 0, -900)
+mesh = SubResource("PlaneMesh_dlxpk")
+
+[node name="@MeshInstance3D@44487" type="MeshInstance3D" parent="." unique_id=1305503721]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 300, 0, -750)
+mesh = SubResource("PlaneMesh_12jok")
+
+[node name="@MeshInstance3D@44488" type="MeshInstance3D" parent="." unique_id=659855054]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 300, 0, -600)
+mesh = SubResource("PlaneMesh_07d8y")
+
+[node name="@MeshInstance3D@44489" type="MeshInstance3D" parent="." unique_id=1659768478]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 300, 0, -450)
+mesh = SubResource("PlaneMesh_u5o3d")
+
+[node name="@MeshInstance3D@44490" type="MeshInstance3D" parent="." unique_id=947069274]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 300, 0, -300)
+mesh = SubResource("PlaneMesh_qo6sc")
+
+[node name="@MeshInstance3D@44491" type="MeshInstance3D" parent="." unique_id=1476191853]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 300, 0, -150)
+mesh = SubResource("PlaneMesh_2tcq0")
+
+[node name="@MeshInstance3D@44492" type="MeshInstance3D" parent="." unique_id=527469556]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 300, 0, 0)
+mesh = SubResource("PlaneMesh_ikykb")
+
+[node name="@MeshInstance3D@44493" type="MeshInstance3D" parent="." unique_id=648872352]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 300, 0, 150)
+mesh = SubResource("PlaneMesh_pvqi8")
+
+[node name="@MeshInstance3D@44494" type="MeshInstance3D" parent="." unique_id=2112464874]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 300, 0, 300)
+mesh = SubResource("PlaneMesh_j8lmr")
+
+[node name="@MeshInstance3D@44495" type="MeshInstance3D" parent="." unique_id=1886530609]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 300, 0, 450)
+mesh = SubResource("PlaneMesh_i5hlx")
+
+[node name="@MeshInstance3D@44496" type="MeshInstance3D" parent="." unique_id=2089061661]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 300, 0, 600)
+mesh = SubResource("PlaneMesh_fwee8")
+
+[node name="@MeshInstance3D@44497" type="MeshInstance3D" parent="." unique_id=1393357511]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 300, 0, 750)
+mesh = SubResource("PlaneMesh_dpfs1")
+
+[node name="@MeshInstance3D@44498" type="MeshInstance3D" parent="." unique_id=2084593978]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 300, 0, 900)
+mesh = SubResource("PlaneMesh_k8dh3")
+
+[node name="@MeshInstance3D@44499" type="MeshInstance3D" parent="." unique_id=753305982]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 300, 0, 1050)
+mesh = SubResource("PlaneMesh_kmsvc")
+
+[node name="@MeshInstance3D@44500" type="MeshInstance3D" parent="." unique_id=1417164148]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 300, 0, 1200)
+mesh = SubResource("PlaneMesh_lktoi")
+
+[node name="@MeshInstance3D@44501" type="MeshInstance3D" parent="." unique_id=1273802165]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 300, 0, 1350)
+mesh = SubResource("PlaneMesh_bdrwe")
+
+[node name="@MeshInstance3D@44502" type="MeshInstance3D" parent="." unique_id=193333046]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 450, 0, -1350)
+mesh = SubResource("PlaneMesh_vk2en")
+
+[node name="@MeshInstance3D@44503" type="MeshInstance3D" parent="." unique_id=407296256]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 450, 0, -1200)
+mesh = SubResource("PlaneMesh_ybigy")
+
+[node name="@MeshInstance3D@44504" type="MeshInstance3D" parent="." unique_id=945123088]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 450, 0, -1050)
+mesh = SubResource("PlaneMesh_ec1sn")
+
+[node name="@MeshInstance3D@44505" type="MeshInstance3D" parent="." unique_id=1611439440]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 450, 0, -900)
+mesh = SubResource("PlaneMesh_ufsv5")
+
+[node name="@MeshInstance3D@44506" type="MeshInstance3D" parent="." unique_id=644663097]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 450, 0, -750)
+mesh = SubResource("PlaneMesh_iiwe0")
+
+[node name="@MeshInstance3D@44507" type="MeshInstance3D" parent="." unique_id=223482832]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 450, 0, -600)
+mesh = SubResource("PlaneMesh_kj4lr")
+
+[node name="@MeshInstance3D@44508" type="MeshInstance3D" parent="." unique_id=1178716458]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 450, 0, -450)
+mesh = SubResource("PlaneMesh_liqaj")
+
+[node name="@MeshInstance3D@44509" type="MeshInstance3D" parent="." unique_id=305091129]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 450, 0, -300)
+mesh = SubResource("PlaneMesh_mhbcj")
+
+[node name="@MeshInstance3D@44510" type="MeshInstance3D" parent="." unique_id=1399978542]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 450, 0, -150)
+mesh = SubResource("PlaneMesh_ff4i5")
+
+[node name="@MeshInstance3D@44511" type="MeshInstance3D" parent="." unique_id=700150600]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 450, 0, 0)
+mesh = SubResource("PlaneMesh_cfamx")
+
+[node name="@MeshInstance3D@44512" type="MeshInstance3D" parent="." unique_id=2029551087]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 450, 0, 150)
+mesh = SubResource("PlaneMesh_xtud7")
+
+[node name="@MeshInstance3D@44513" type="MeshInstance3D" parent="." unique_id=397981367]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 450, 0, 300)
+mesh = SubResource("PlaneMesh_wrkpj")
+
+[node name="@MeshInstance3D@44514" type="MeshInstance3D" parent="." unique_id=635886709]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 450, 0, 450)
+mesh = SubResource("PlaneMesh_rtwbs")
+
+[node name="@MeshInstance3D@44515" type="MeshInstance3D" parent="." unique_id=1746314486]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 450, 0, 600)
+mesh = SubResource("PlaneMesh_ankhd")
+
+[node name="@MeshInstance3D@44516" type="MeshInstance3D" parent="." unique_id=2063815776]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 450, 0, 750)
+mesh = SubResource("PlaneMesh_vxeqx")
+
+[node name="@MeshInstance3D@44517" type="MeshInstance3D" parent="." unique_id=750483309]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 450, 0, 900)
+mesh = SubResource("PlaneMesh_p1o30")
+
+[node name="@MeshInstance3D@44518" type="MeshInstance3D" parent="." unique_id=1439524094]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 450, 0, 1050)
+mesh = SubResource("PlaneMesh_tygdo")
+
+[node name="@MeshInstance3D@44519" type="MeshInstance3D" parent="." unique_id=462427549]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 450, 0, 1200)
+mesh = SubResource("PlaneMesh_he6ay")
+
+[node name="@MeshInstance3D@44520" type="MeshInstance3D" parent="." unique_id=1225167164]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 450, 0, 1350)
+mesh = SubResource("PlaneMesh_hrify")
+
+[node name="@MeshInstance3D@44521" type="MeshInstance3D" parent="." unique_id=1663783327]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 600, 0, -1350)
+mesh = SubResource("PlaneMesh_vbpru")
+
+[node name="@MeshInstance3D@44522" type="MeshInstance3D" parent="." unique_id=1896662650]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 600, 0, -1200)
+mesh = SubResource("PlaneMesh_nj7lh")
+
+[node name="@MeshInstance3D@44523" type="MeshInstance3D" parent="." unique_id=1860256000]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 600, 0, -1050)
+mesh = SubResource("PlaneMesh_cxux8")
+
+[node name="@MeshInstance3D@44524" type="MeshInstance3D" parent="." unique_id=1747561880]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 600, 0, -900)
+mesh = SubResource("PlaneMesh_hwtpt")
+
+[node name="@MeshInstance3D@44525" type="MeshInstance3D" parent="." unique_id=814156033]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 600, 0, -750)
+mesh = SubResource("PlaneMesh_e0m31")
+
+[node name="@MeshInstance3D@44526" type="MeshInstance3D" parent="." unique_id=1318213512]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 600, 0, -600)
+mesh = SubResource("PlaneMesh_leu7w")
+
+[node name="@MeshInstance3D@44527" type="MeshInstance3D" parent="." unique_id=1595445259]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 600, 0, -450)
+mesh = SubResource("PlaneMesh_u1033")
+
+[node name="@MeshInstance3D@44528" type="MeshInstance3D" parent="." unique_id=1019163755]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 600, 0, -300)
+mesh = SubResource("PlaneMesh_703hp")
+
+[node name="@MeshInstance3D@44529" type="MeshInstance3D" parent="." unique_id=1361866577]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 600, 0, -150)
+mesh = SubResource("PlaneMesh_4k4xt")
+
+[node name="@MeshInstance3D@44530" type="MeshInstance3D" parent="." unique_id=85362895]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 600, 0, 0)
+mesh = SubResource("PlaneMesh_nc1pj")
+
+[node name="@MeshInstance3D@44531" type="MeshInstance3D" parent="." unique_id=1946041900]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 600, 0, 150)
+mesh = SubResource("PlaneMesh_lfkxi")
+
+[node name="@MeshInstance3D@44532" type="MeshInstance3D" parent="." unique_id=465339391]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 600, 0, 300)
+mesh = SubResource("PlaneMesh_s044t")
+
+[node name="@MeshInstance3D@44533" type="MeshInstance3D" parent="." unique_id=452351650]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 600, 0, 450)
+mesh = SubResource("PlaneMesh_riwy4")
+
+[node name="@MeshInstance3D@44534" type="MeshInstance3D" parent="." unique_id=1279300210]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 600, 0, 600)
+mesh = SubResource("PlaneMesh_766te")
+
+[node name="@MeshInstance3D@44535" type="MeshInstance3D" parent="." unique_id=749943627]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 600, 0, 750)
+mesh = SubResource("PlaneMesh_73to6")
+
+[node name="@MeshInstance3D@44536" type="MeshInstance3D" parent="." unique_id=1617081898]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 600, 0, 900)
+mesh = SubResource("PlaneMesh_ctj0d")
+
+[node name="@MeshInstance3D@44537" type="MeshInstance3D" parent="." unique_id=133517174]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 600, 0, 1050)
+mesh = SubResource("PlaneMesh_hryf7")
+
+[node name="@MeshInstance3D@44538" type="MeshInstance3D" parent="." unique_id=1691639724]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 600, 0, 1200)
+mesh = SubResource("PlaneMesh_ajh6j")
+
+[node name="@MeshInstance3D@44539" type="MeshInstance3D" parent="." unique_id=1275545084]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 600, 0, 1350)
+mesh = SubResource("PlaneMesh_rf2ar")
+
+[node name="@MeshInstance3D@44540" type="MeshInstance3D" parent="." unique_id=1425628821]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 750, 0, -1350)
+mesh = SubResource("PlaneMesh_qj6h0")
+
+[node name="@MeshInstance3D@44541" type="MeshInstance3D" parent="." unique_id=165394436]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 750, 0, -1200)
+mesh = SubResource("PlaneMesh_h80xg")
+
+[node name="@MeshInstance3D@44542" type="MeshInstance3D" parent="." unique_id=1320119537]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 750, 0, -1050)
+mesh = SubResource("PlaneMesh_5rgvf")
+
+[node name="@MeshInstance3D@44543" type="MeshInstance3D" parent="." unique_id=2044552692]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 750, 0, -900)
+mesh = SubResource("PlaneMesh_uuqny")
+
+[node name="@MeshInstance3D@44544" type="MeshInstance3D" parent="." unique_id=1679578573]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 750, 0, -750)
+mesh = SubResource("PlaneMesh_uqles")
+
+[node name="@MeshInstance3D@44545" type="MeshInstance3D" parent="." unique_id=1558989703]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 750, 0, -600)
+mesh = SubResource("PlaneMesh_i18yb")
+
+[node name="@MeshInstance3D@44546" type="MeshInstance3D" parent="." unique_id=948327646]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 750, 0, -450)
+mesh = SubResource("PlaneMesh_qixbu")
+
+[node name="@MeshInstance3D@44547" type="MeshInstance3D" parent="." unique_id=1323414738]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 750, 0, -300)
+mesh = SubResource("PlaneMesh_68cv8")
+
+[node name="@MeshInstance3D@44548" type="MeshInstance3D" parent="." unique_id=1412992262]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 750, 0, -150)
+mesh = SubResource("PlaneMesh_wqsut")
+
+[node name="@MeshInstance3D@44549" type="MeshInstance3D" parent="." unique_id=1277990345]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 750, 0, 0)
+mesh = SubResource("PlaneMesh_jf23p")
+
+[node name="@MeshInstance3D@44550" type="MeshInstance3D" parent="." unique_id=1798141854]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 750, 0, 150)
+mesh = SubResource("PlaneMesh_qeine")
+
+[node name="@MeshInstance3D@44551" type="MeshInstance3D" parent="." unique_id=1979215260]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 750, 0, 300)
+mesh = SubResource("PlaneMesh_k7vkg")
+
+[node name="@MeshInstance3D@44552" type="MeshInstance3D" parent="." unique_id=616157126]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 750, 0, 450)
+mesh = SubResource("PlaneMesh_f8bos")
+
+[node name="@MeshInstance3D@44553" type="MeshInstance3D" parent="." unique_id=443815058]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 750, 0, 600)
+mesh = SubResource("PlaneMesh_umngw")
+
+[node name="@MeshInstance3D@44554" type="MeshInstance3D" parent="." unique_id=892048380]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 750, 0, 750)
+mesh = SubResource("PlaneMesh_xue1t")
+
+[node name="@MeshInstance3D@44555" type="MeshInstance3D" parent="." unique_id=1429041108]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 750, 0, 900)
+mesh = SubResource("PlaneMesh_vp47n")
+
+[node name="@MeshInstance3D@44556" type="MeshInstance3D" parent="." unique_id=268793590]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 750, 0, 1050)
+mesh = SubResource("PlaneMesh_olbru")
+
+[node name="@MeshInstance3D@44557" type="MeshInstance3D" parent="." unique_id=1358720901]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 750, 0, 1200)
+mesh = SubResource("PlaneMesh_cpb1q")
+
+[node name="@MeshInstance3D@44558" type="MeshInstance3D" parent="." unique_id=1052984682]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 750, 0, 1350)
+mesh = SubResource("PlaneMesh_361ap")
+
+[node name="@MeshInstance3D@44559" type="MeshInstance3D" parent="." unique_id=1438544835]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 900, 0, -1350)
+mesh = SubResource("PlaneMesh_iodgm")
+
+[node name="@MeshInstance3D@44560" type="MeshInstance3D" parent="." unique_id=1393068580]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 900, 0, -1200)
+mesh = SubResource("PlaneMesh_pwow3")
+
+[node name="@MeshInstance3D@44561" type="MeshInstance3D" parent="." unique_id=684713859]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 900, 0, -1050)
+mesh = SubResource("PlaneMesh_ryyjs")
+
+[node name="@MeshInstance3D@44562" type="MeshInstance3D" parent="." unique_id=234360664]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 900, 0, -900)
+mesh = SubResource("PlaneMesh_fdd41")
+
+[node name="@MeshInstance3D@44563" type="MeshInstance3D" parent="." unique_id=1023409286]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 900, 0, -750)
+mesh = SubResource("PlaneMesh_6jrn2")
+
+[node name="@MeshInstance3D@44564" type="MeshInstance3D" parent="." unique_id=1499401664]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 900, 0, -600)
+mesh = SubResource("PlaneMesh_ub7yv")
+
+[node name="@MeshInstance3D@44565" type="MeshInstance3D" parent="." unique_id=817562651]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 900, 0, -450)
+mesh = SubResource("PlaneMesh_ndqgw")
+
+[node name="@MeshInstance3D@44566" type="MeshInstance3D" parent="." unique_id=1725457978]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 900, 0, -300)
+mesh = SubResource("PlaneMesh_nsana")
+
+[node name="@MeshInstance3D@44567" type="MeshInstance3D" parent="." unique_id=2019596751]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 900, 0, -150)
+mesh = SubResource("PlaneMesh_6ns08")
+
+[node name="@MeshInstance3D@44568" type="MeshInstance3D" parent="." unique_id=155110131]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 900, 0, 0)
+mesh = SubResource("PlaneMesh_j8f78")
+
+[node name="@MeshInstance3D@44569" type="MeshInstance3D" parent="." unique_id=737276499]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 900, 0, 150)
+mesh = SubResource("PlaneMesh_6hola")
+
+[node name="@MeshInstance3D@44570" type="MeshInstance3D" parent="." unique_id=2018523249]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 900, 0, 300)
+mesh = SubResource("PlaneMesh_8ktbc")
+
+[node name="@MeshInstance3D@44571" type="MeshInstance3D" parent="." unique_id=1445580095]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 900, 0, 450)
+mesh = SubResource("PlaneMesh_eb2lk")
+
+[node name="@MeshInstance3D@44572" type="MeshInstance3D" parent="." unique_id=1720624471]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 900, 0, 600)
+mesh = SubResource("PlaneMesh_y3t5d")
+
+[node name="@MeshInstance3D@44573" type="MeshInstance3D" parent="." unique_id=1985361538]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 900, 0, 750)
+mesh = SubResource("PlaneMesh_w6y00")
+
+[node name="@MeshInstance3D@44574" type="MeshInstance3D" parent="." unique_id=328935580]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 900, 0, 900)
+mesh = SubResource("PlaneMesh_tpieo")
+
+[node name="@MeshInstance3D@44575" type="MeshInstance3D" parent="." unique_id=2086258515]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 900, 0, 1050)
+mesh = SubResource("PlaneMesh_w70jp")
+
+[node name="@MeshInstance3D@44576" type="MeshInstance3D" parent="." unique_id=1471756181]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 900, 0, 1200)
+mesh = SubResource("PlaneMesh_dnsqc")
+
+[node name="@MeshInstance3D@44577" type="MeshInstance3D" parent="." unique_id=1924127269]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 900, 0, 1350)
+mesh = SubResource("PlaneMesh_2g3bn")
+
+[node name="@MeshInstance3D@44578" type="MeshInstance3D" parent="." unique_id=1536693866]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1050, 0, -1350)
+mesh = SubResource("PlaneMesh_a3axy")
+
+[node name="@MeshInstance3D@44579" type="MeshInstance3D" parent="." unique_id=1409967696]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1050, 0, -1200)
+mesh = SubResource("PlaneMesh_g8vec")
+
+[node name="@MeshInstance3D@44580" type="MeshInstance3D" parent="." unique_id=1367341393]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1050, 0, -1050)
+mesh = SubResource("PlaneMesh_kgjfp")
+
+[node name="@MeshInstance3D@44581" type="MeshInstance3D" parent="." unique_id=1456222374]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1050, 0, -900)
+mesh = SubResource("PlaneMesh_myy0t")
+
+[node name="@MeshInstance3D@44582" type="MeshInstance3D" parent="." unique_id=841708999]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1050, 0, -750)
+mesh = SubResource("PlaneMesh_d0vq4")
+
+[node name="@MeshInstance3D@44583" type="MeshInstance3D" parent="." unique_id=2082361773]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1050, 0, -600)
+mesh = SubResource("PlaneMesh_0v0hh")
+
+[node name="@MeshInstance3D@44584" type="MeshInstance3D" parent="." unique_id=1183474569]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1050, 0, -450)
+mesh = SubResource("PlaneMesh_dkfqs")
+
+[node name="@MeshInstance3D@44585" type="MeshInstance3D" parent="." unique_id=708819843]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1050, 0, -300)
+mesh = SubResource("PlaneMesh_bvmeh")
+
+[node name="@MeshInstance3D@44586" type="MeshInstance3D" parent="." unique_id=1286418068]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1050, 0, -150)
+mesh = SubResource("PlaneMesh_bxl0l")
+
+[node name="@MeshInstance3D@44587" type="MeshInstance3D" parent="." unique_id=1294152909]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1050, 0, 0)
+mesh = SubResource("PlaneMesh_hrac0")
+
+[node name="@MeshInstance3D@44588" type="MeshInstance3D" parent="." unique_id=1229322248]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1050, 0, 150)
+mesh = SubResource("PlaneMesh_kay5a")
+
+[node name="@MeshInstance3D@44589" type="MeshInstance3D" parent="." unique_id=1732854123]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1050, 0, 300)
+mesh = SubResource("PlaneMesh_1jiul")
+
+[node name="@MeshInstance3D@44590" type="MeshInstance3D" parent="." unique_id=1344232586]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1050, 0, 450)
+mesh = SubResource("PlaneMesh_3tmux")
+
+[node name="@MeshInstance3D@44591" type="MeshInstance3D" parent="." unique_id=1425565599]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1050, 0, 600)
+mesh = SubResource("PlaneMesh_gn86s")
+
+[node name="@MeshInstance3D@44592" type="MeshInstance3D" parent="." unique_id=1749826569]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1050, 0, 750)
+mesh = SubResource("PlaneMesh_k5dke")
+
+[node name="@MeshInstance3D@44593" type="MeshInstance3D" parent="." unique_id=1273724018]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1050, 0, 900)
+mesh = SubResource("PlaneMesh_jrr1c")
+
+[node name="@MeshInstance3D@44594" type="MeshInstance3D" parent="." unique_id=1370848235]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1050, 0, 1050)
+mesh = SubResource("PlaneMesh_xnex3")
+
+[node name="@MeshInstance3D@44595" type="MeshInstance3D" parent="." unique_id=1515028720]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1050, 0, 1200)
+mesh = SubResource("PlaneMesh_ahgbr")
+
+[node name="@MeshInstance3D@44596" type="MeshInstance3D" parent="." unique_id=322358047]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1050, 0, 1350)
+mesh = SubResource("PlaneMesh_8nevt")
+
+[node name="@MeshInstance3D@44597" type="MeshInstance3D" parent="." unique_id=570098024]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1200, 0, -1350)
+mesh = SubResource("PlaneMesh_tdgfw")
+
+[node name="@MeshInstance3D@44598" type="MeshInstance3D" parent="." unique_id=1577701186]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1200, 0, -1200)
+mesh = SubResource("PlaneMesh_5d6rv")
+
+[node name="@MeshInstance3D@44599" type="MeshInstance3D" parent="." unique_id=1395058945]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1200, 0, -1050)
+mesh = SubResource("PlaneMesh_ro4am")
+
+[node name="@MeshInstance3D@44600" type="MeshInstance3D" parent="." unique_id=1256170023]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1200, 0, -900)
+mesh = SubResource("PlaneMesh_aslis")
+
+[node name="@MeshInstance3D@44601" type="MeshInstance3D" parent="." unique_id=1030673459]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1200, 0, -750)
+mesh = SubResource("PlaneMesh_gq174")
+
+[node name="@MeshInstance3D@44602" type="MeshInstance3D" parent="." unique_id=1851947564]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1200, 0, -600)
+mesh = SubResource("PlaneMesh_xioj8")
+
+[node name="@MeshInstance3D@44603" type="MeshInstance3D" parent="." unique_id=1302697698]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1200, 0, -450)
+mesh = SubResource("PlaneMesh_dqv6p")
+
+[node name="@MeshInstance3D@44604" type="MeshInstance3D" parent="." unique_id=895052437]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1200, 0, -300)
+mesh = SubResource("PlaneMesh_jgfvd")
+
+[node name="@MeshInstance3D@44605" type="MeshInstance3D" parent="." unique_id=1413769260]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1200, 0, -150)
+mesh = SubResource("PlaneMesh_thubd")
+
+[node name="@MeshInstance3D@44606" type="MeshInstance3D" parent="." unique_id=1346017682]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1200, 0, 0)
+mesh = SubResource("PlaneMesh_8hfem")
+
+[node name="@MeshInstance3D@44607" type="MeshInstance3D" parent="." unique_id=1926947595]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1200, 0, 150)
+mesh = SubResource("PlaneMesh_vi370")
+
+[node name="@MeshInstance3D@44608" type="MeshInstance3D" parent="." unique_id=787767675]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1200, 0, 300)
+mesh = SubResource("PlaneMesh_20t6k")
+
+[node name="@MeshInstance3D@44609" type="MeshInstance3D" parent="." unique_id=1848215631]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1200, 0, 450)
+mesh = SubResource("PlaneMesh_u6ir4")
+
+[node name="@MeshInstance3D@44610" type="MeshInstance3D" parent="." unique_id=927053906]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1200, 0, 600)
+mesh = SubResource("PlaneMesh_8wkj4")
+
+[node name="@MeshInstance3D@44611" type="MeshInstance3D" parent="." unique_id=753229779]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1200, 0, 750)
+mesh = SubResource("PlaneMesh_mk6fd")
+
+[node name="@MeshInstance3D@44612" type="MeshInstance3D" parent="." unique_id=920453976]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1200, 0, 900)
+mesh = SubResource("PlaneMesh_a6vdv")
+
+[node name="@MeshInstance3D@44613" type="MeshInstance3D" parent="." unique_id=157343651]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1200, 0, 1050)
+mesh = SubResource("PlaneMesh_4oryp")
+
+[node name="@MeshInstance3D@44614" type="MeshInstance3D" parent="." unique_id=1785467195]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1200, 0, 1200)
+mesh = SubResource("PlaneMesh_4lrvg")
+
+[node name="@MeshInstance3D@44615" type="MeshInstance3D" parent="." unique_id=899774491]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1200, 0, 1350)
+mesh = SubResource("PlaneMesh_ccs6h")
+
+[node name="@MeshInstance3D@44616" type="MeshInstance3D" parent="." unique_id=1733584575]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1350, 0, -1350)
+mesh = SubResource("PlaneMesh_u0elx")
+
+[node name="@MeshInstance3D@44617" type="MeshInstance3D" parent="." unique_id=1224387358]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1350, 0, -1200)
+mesh = SubResource("PlaneMesh_ltaai")
+
+[node name="@MeshInstance3D@44618" type="MeshInstance3D" parent="." unique_id=712976835]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1350, 0, -1050)
+mesh = SubResource("PlaneMesh_tqw4j")
+
+[node name="@MeshInstance3D@44619" type="MeshInstance3D" parent="." unique_id=744575619]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1350, 0, -900)
+mesh = SubResource("PlaneMesh_rxxyf")
+
+[node name="@MeshInstance3D@44620" type="MeshInstance3D" parent="." unique_id=627811612]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1350, 0, -750)
+mesh = SubResource("PlaneMesh_yjxdt")
+
+[node name="@MeshInstance3D@44621" type="MeshInstance3D" parent="." unique_id=1241484214]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1350, 0, -600)
+mesh = SubResource("PlaneMesh_otwig")
+
+[node name="@MeshInstance3D@44622" type="MeshInstance3D" parent="." unique_id=1750369963]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1350, 0, -450)
+mesh = SubResource("PlaneMesh_5rn6s")
+
+[node name="@MeshInstance3D@44623" type="MeshInstance3D" parent="." unique_id=1521134441]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1350, 0, -300)
+mesh = SubResource("PlaneMesh_v2rfb")
+
+[node name="@MeshInstance3D@44624" type="MeshInstance3D" parent="." unique_id=1333766287]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1350, 0, -150)
+mesh = SubResource("PlaneMesh_nq0f2")
+
+[node name="@MeshInstance3D@44625" type="MeshInstance3D" parent="." unique_id=1375686514]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1350, 0, 0)
+mesh = SubResource("PlaneMesh_50bbt")
+
+[node name="@MeshInstance3D@44626" type="MeshInstance3D" parent="." unique_id=1584990566]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1350, 0, 150)
+mesh = SubResource("PlaneMesh_lkfni")
+
+[node name="@MeshInstance3D@44627" type="MeshInstance3D" parent="." unique_id=708973892]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1350, 0, 300)
+mesh = SubResource("PlaneMesh_wqr7n")
+
+[node name="@MeshInstance3D@44628" type="MeshInstance3D" parent="." unique_id=1310389599]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1350, 0, 450)
+mesh = SubResource("PlaneMesh_asdyn")
+
+[node name="@MeshInstance3D@44629" type="MeshInstance3D" parent="." unique_id=269591039]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1350, 0, 600)
+mesh = SubResource("PlaneMesh_un8pt")
+
+[node name="@MeshInstance3D@44630" type="MeshInstance3D" parent="." unique_id=1396275198]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1350, 0, 750)
+mesh = SubResource("PlaneMesh_hiyhu")
+
+[node name="@MeshInstance3D@44631" type="MeshInstance3D" parent="." unique_id=999008951]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1350, 0, 900)
+mesh = SubResource("PlaneMesh_pyibj")
+
+[node name="@MeshInstance3D@44632" type="MeshInstance3D" parent="." unique_id=629456256]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1350, 0, 1050)
+mesh = SubResource("PlaneMesh_o0vhq")
+
+[node name="@MeshInstance3D@44633" type="MeshInstance3D" parent="." unique_id=76869529]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1350, 0, 1200)
+mesh = SubResource("PlaneMesh_jxjkm")
+
+[node name="@MeshInstance3D@44634" type="MeshInstance3D" parent="." unique_id=364100814]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1350, 0, 1350)
+mesh = SubResource("PlaneMesh_7r2p8")

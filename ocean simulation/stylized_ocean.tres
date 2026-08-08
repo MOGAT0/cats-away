@@ -1,0 +1,43 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://dgj8b1c3e024a"]
+
+[ext_resource type="Shader" uid="uid://dhe2wluilplr6" path="res://ocean simulation/stylized_ocean.gdshader" id="1_orqkw"]
+
+[resource]
+render_priority = 2
+shader = ExtResource("1_orqkw")
+shader_parameter/max_depth = 10.0
+shader_parameter/water_level = 0.0
+shader_parameter/underwater_fog_color = Color(0.03137254, 0.32156864, 0.3079657, 1)
+shader_parameter/fade_start_depth = 50.0
+shader_parameter/sea_height = 0.8
+shader_parameter/sea_choppy = 4.0
+shader_parameter/sea_speed = 1.5
+shader_parameter/sea_freq = 0.08
+shader_parameter/ITER_GEOMETRY = 3
+shader_parameter/ITER_FRAGMENT = 5
+shader_parameter/refraction_strength = 1.0
+shader_parameter/refraction_distance_fade = 5.0
+shader_parameter/normal_epsilon = 0.01
+shader_parameter/normal_smoothness_dist = 50.0
+shader_parameter/base_tint_color = Color(0, 1, 0.9176471, 1)
+shader_parameter/deep_color = Color(0, 1, 0.85057473, 1)
+shader_parameter/water_clarity = 100.0
+shader_parameter/caustics_scale = 2.0
+shader_parameter/caustics_speed = 0.1
+shader_parameter/caustics_intensity = 0.8
+shader_parameter/caustics_depth_fade = 0.7
+shader_parameter/foam_color = Color(1, 1, 1, 1)
+shader_parameter/foam_depth_start = 0.0999999977648
+shader_parameter/foam_depth_end = 0.0
+shader_parameter/foam_noise_scale = 2.0
+shader_parameter/foam_noise_speed = 1.0
+shader_parameter/foam_cutoff = 0.7
+shader_parameter/foam_crest_threshold = 0.9499999787656
+shader_parameter/foam_crest_amount = 2.0
+shader_parameter/foam_edge_color = Color(0, 0, 0.05, 1)
+shader_parameter/foam_edge_offset = Vector2(0.02, 0.02)
+shader_parameter/voronoi_scale = 9.0
+shader_parameter/voronoi_strength = 0.8
+shader_parameter/roughness = 0.125
+shader_parameter/metallic = 0.0
+shader_parameter/specular = 0.5

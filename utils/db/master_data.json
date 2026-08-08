@@ -1,0 +1,42 @@
+{
+	"wood": {
+		"id": "",
+		"type": "item",
+		"ammount": 1.0
+	},
+	"stick": {
+		"id": "",
+		"type": "item",
+		"ammount": 1.0
+	},
+	"plank": {
+		"id": "",
+		"type": "item",
+		"ammount": 1.0
+	},
+	"rock": {
+		"id": "",
+		"type": "item",
+		"ammount": 1.0
+	},
+	"rope": {
+		"id": "",
+		"type": "item",
+		"ammount": 1.0
+	},
+	"stone_axe": {
+		"id": "",
+		"type": "equipment",
+		"ammount": 1.0
+	},
+	"stone_pickaxe": {
+		"id": "",
+		"type": "equipment",
+		"ammount": 1.0
+	},
+	"stone_hammer": {
+		"id": "",
+		"type": "equipment",
+		"ammount": 1.0
+	}
+}

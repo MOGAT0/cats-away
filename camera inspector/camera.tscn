@@ -1,0 +1,59 @@
+[gd_scene load_steps=5 format=3 uid="uid://b0xdii3wuyjmn"]
+
+[ext_resource type="Script" uid="uid://c3m5vxr8ume4i" path="res://camera inspector/camera.gd" id="1_gunpr"]
+[ext_resource type="Shader" uid="uid://2skqj11m42r5" path="res://ocean simulation/underwater_camera.gdshader" id="2_24gsx"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_mnvpf"]
+render_priority = 0
+shader = ExtResource("2_24gsx")
+shader_parameter/sea_height = 0.800000038
+shader_parameter/sea_choppy = 4.0
+shader_parameter/sea_speed = 1.5
+shader_parameter/sea_freq = 0.08
+shader_parameter/height_offset = 0.0
+shader_parameter/underwater_color = Color(0.019607844, 0.24013482, 0.2509804, 1)
+shader_parameter/absorption_strength = 0.35
+shader_parameter/deep_tint_strength = 0.65
+shader_parameter/refraction_amount = 0.004
+shader_parameter/refraction_speed = 0.7
+shader_parameter/water_level_fudge = 0.0
+
+[sub_resource type="QuadMesh" id="QuadMesh_2ih0o"]
+
+[node name="Camera" type="Camera3D"]
+transform = Transform3D(1, 0, 0, 0, 0.99475473, 0.10228906, 0, -0.10228906, 0.99475473, 0, 0, 0)
+script = ExtResource("1_gunpr")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="fps" type="Label" parent="CanvasLayer/Control"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -76.0
+offset_top = -37.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_color = Color(0, 1, 0.1328125, 1)
+theme_override_font_sizes/font_size = 25
+text = "fps"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="underwater" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.18627495)
+material_override = SubResource("ShaderMaterial_mnvpf")
+mesh = SubResource("QuadMesh_2ih0o")

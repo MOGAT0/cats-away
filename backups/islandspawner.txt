@@ -1,0 +1,424 @@
+
+#@tool
+#extends Node3D
+#class_name IslandGenerator
+#
+#@export var generate: bool = false:
+	#set(value):
+		#if value:
+			#_generate_island()
+			#generate = false
+#
+#@export_group("Island Settings")
+#@export var island_size: float = 100.0
+#@export var max_height: float = 15.0
+#@export var sand_level: float = 1.5 # Anything below this is considered "Sand"
+#@export var island_seed: int = 0
+#@export var noise: FastNoiseLite
+#@export var subdivision : Vector2
+#
+#@export_group("Foliage")
+#@export var foliage_types: Array[FoliageSetting]
+#
+#@onready var terrain_mesh = $TerrainMesh
+#
+#func _generate_island() -> void:
+	#if not terrain_mesh or not noise: return
+	#
+	#noise.seed = island_seed
+	#
+	## 1. Use PlaneMesh to generate the structured data, 
+	## but we will manually build the SurfaceTool data to avoid the error.
+	#var plane = PlaneMesh.new()
+	#plane.size = Vector2(island_size, island_size)
+	## Subdivisions must be high enough to make your noise look smooth
+	#plane.subdivide_width = subdivision.x 
+	#plane.subdivide_depth = subdivision.y
+	#
+	## 2. Use SurfaceTool to create the mesh data
+	#var st = SurfaceTool.new()
+	#st.begin(Mesh.PRIMITIVE_TRIANGLES)
+	#
+	## We need to get the SurfaceTool to generate the index array for us
+	## by creating it from the surface
+	#st.create_from(plane, 0)
+	#
+	## Get the arrays to manipulate
+	#var mesh_data = st.commit_to_arrays()
+	#var vertices = mesh_data[Mesh.ARRAY_VERTEX]
+	#var indices = mesh_data[Mesh.ARRAY_INDEX] # This ensures it's a multiple of 3!
+	#
+	## 3. Shape the terrain
+	#for i in range(vertices.size()):
+		#var pos = vertices[i]
+		#
+		## Calculate normalized coordinates (distance from center, 0 to 1)
+		#var dist = Vector2(pos.x, pos.z).length()
+		#var max_radius = island_size / 2.0
+		#var dist_norm = clamp(dist / max_radius, 0.0, 1.0)
+		#
+		## --- CONE EFFECT ---
+		## We want the island surface to be 'island_size' (at y=0), 
+		## but the bottom to be 'island_size * 2' (at y=-1000).
+		## This lerp formula expands the X/Z position the deeper we go.
+		#var expansion_factor = lerp(1.0, 2.0, smoothstep(0.0, 1.0, dist_norm))
+		#pos.x *= expansion_factor
+		#pos.z *= expansion_factor
+		#
+		## --- HEIGHT & FALLOFF ---
+		#var falloff = 1.0 - smoothstep(0.0, 1.0, dist_norm)
+		#var raw_noise = (noise.get_noise_2d(pos.x, pos.z) + 1.0) * 0.5
+		#
+		#if dist_norm < 1.0:
+			#pos.y = (raw_noise * max_height) * falloff
+		#else:
+			## Sink edge based on depth
+			#pos.y = -1000.0 * dist_norm
+			#
+		#vertices[i] = pos
+		#
+	## 4. Rebuild the mesh
+	#var final_st = SurfaceTool.new()
+	#final_st.begin(Mesh.PRIMITIVE_TRIANGLES)
+	#
+	## Add vertices
+	#for v in vertices:
+		#final_st.add_vertex(v)
+		#
+	## CRITICAL FIX: Add the indices back in!
+	## This tells Godot which vertices connect to form the triangles.
+	#for idx in indices:
+		#final_st.add_index(idx)
+		#
+	#final_st.generate_normals()
+	#terrain_mesh.mesh = final_st.commit()
+#
+#func _scatter_foliage(vertices: PackedVector3Array) -> void:
+	#var rng = RandomNumberGenerator.new()
+	#rng.seed = island_seed
+	#
+	#for foliage in foliage_types:
+		#if not foliage: continue
+		#
+		## Setup an Editor Placeholder (MultiMesh) or Game Container
+		#var container
+		#if Engine.is_editor_hint() and foliage.placeholder_mesh:
+			#container = MultiMeshInstance3D.new()
+			#var mm = MultiMesh.new()
+			#mm.transform_format = MultiMesh.TRANSFORM_3D
+			#mm.mesh = foliage.placeholder_mesh
+			#container.multimesh = mm
+			#add_child(container)
+		#else:
+			#container = Node3D.new()
+			#container.name = foliage.name + "_Container"
+			#add_child(container)
+			#
+		#var spawned_positions = []
+		#var transform_list = []
+		#
+		## Loop through terrain vertices
+		#for v in vertices:
+			## Only check vertices above water
+			#if v.y < 0.0: continue 
+			#
+			#var is_sand = v.y <= sand_level
+			#
+			## Check sand rules
+			#if is_sand and not foliage.can_spawn_at_sand: continue
+			#if not is_sand and foliage.spawn_at_sand_only: continue
+			#
+			## Density check
+			#if rng.randf() > foliage.density: continue
+			#
+			## Min Distance check
+			#var too_close = false
+			#for sp in spawned_positions:
+				#if sp.distance_to(v) < foliage.min_distance:
+					#too_close = true
+					#break
+			#if too_close: continue
+			#
+			## We passed all rules! Spawn it.
+			#spawned_positions.append(v)
+			#
+			## Randomize size and rotation
+			#var scale_val = rng.randf_range(foliage.min_scale, foliage.max_scale)
+			#var rot_y = rng.randf_range(0, TAU)
+			#
+			#var t = Transform3D()
+			#t = t.scaled(Vector3(scale_val, scale_val, scale_val))
+			#t = t.rotated(Vector3.UP, rot_y)
+			#t.origin = v
+			#
+			#if Engine.is_editor_hint() and container is MultiMeshInstance3D:
+				#transform_list.append(t)
+			#elif foliage.scene_prefab:
+				#var instance = foliage.scene_prefab.instantiate()
+				#instance.transform = t
+				#container.add_child(instance)
+				#
+		## Finalize MultiMesh if in editor
+		#if Engine.is_editor_hint() and container is MultiMeshInstance3D:
+			#container.multimesh.instance_count = transform_list.size()
+			#for i in transform_list.size():
+				#container.multimesh.set_instance_transform(i, transform_list[i])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				
+#func _scatter_foliage(vertices: PackedVector3Array) -> void:
+	#var rng = RandomNumberGenerator.new()
+	#rng.seed = island_seed
+	#
+	#for foliage in foliage_types:
+		#if not foliage: continue
+		#
+		## Setup an Editor Placeholder (MultiMesh) or Game Container
+		#var container
+		#if Engine.is_editor_hint() and foliage.placeholder_mesh:
+			#container = MultiMeshInstance3D.new()
+			#var mm = MultiMesh.new()
+			#mm.transform_format = MultiMesh.TRANSFORM_3D
+			#mm.mesh = foliage.placeholder_mesh
+			#container.multimesh = mm
+			#add_child(container)
+		#else:
+			#container = Node3D.new()
+			#container.name = foliage.name + "_Container"
+			#add_child(container)
+			#
+		#var spawned_positions = []
+		#var transform_list = []
+		#
+		## Loop through terrain vertices
+		#for v in vertices:
+			## Only check vertices above water
+			#if v.y < 0.0: continue 
+			#
+			#var is_sand = v.y <= sand_level
+			#
+			## Check sand rules
+			#if is_sand and not foliage.can_spawn_at_sand: continue
+			#if not is_sand and foliage.spawn_at_sand_only: continue
+			#
+			## Density check
+			#if rng.randf() > foliage.density: continue
+			#
+			## Min Distance check
+			#var too_close = false
+			#for sp in spawned_positions:
+				#if sp.distance_to(v) < foliage.min_distance:
+					#too_close = true
+					#break
+			#if too_close: continue
+			#
+			## We passed all rules! Spawn it.
+			#spawned_positions.append(v)
+			#
+			## Randomize size and rotation
+			#var scale_val = rng.randf_range(foliage.min_scale, foliage.max_scale)
+			#var rot_y = rng.randf_range(0, TAU)
+			#
+			#var t = Transform3D()
+			#t = t.scaled(Vector3(scale_val, scale_val, scale_val))
+			#t = t.rotated(Vector3.UP, rot_y)
+			#t.origin = v
+			#
+			#if Engine.is_editor_hint() and container is MultiMeshInstance3D:
+				#transform_list.append(t)
+			#elif foliage.scene_prefab:
+				#var instance = foliage.scene_prefab.instantiate()
+				#instance.transform = t
+				#container.add_child(instance)
+				#
+		## Finalize MultiMesh if in editor
+		#if Engine.is_editor_hint() and container is MultiMeshInstance3D:
+			#container.multimesh.instance_count = transform_list.size()
+			#for i in transform_list.size():
+				#container.multimesh.set_instance_transform(i, transform_list[i])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@tool
+extends Node3D
+class_name IslandSpawner
+
+const ISLAND_GENERATOR = preload("uid://blnohhm7hi5pt")
+
+@export_group("Map Controls")
+## Click this to generate a completely new map with a random seed
+@export var generate_map: bool = false:
+	set(value):
+		if value:
+			# Randomize the seed every time we click generate
+			world_seed = randi() 
+			_generate_grid()
+			generate_map = false
+
+@export_group("Grid Settings")
+@export var world_seed: int = 42
+@export var grid_width: int = 5
+@export var grid_depth: int = 5
+
+## The maximum physical footprint of an island inside the cell
+@export var cell_size: float = 200.0
+## The guaranteed empty ocean space between grid cells
+@export var cell_margin: float = 50.0
+
+@export_group("Spawn Rules")
+## How full the ocean is (0.0 = completely empty, 1.0 = an island in every cell)
+@export_range(0.0, 1.0) var island_density: float = 0.4
+
+## The chances of an island being a certain size (These normalize automatically)
+@export_range(0.0, 1.0) var small_island_chance: float = 0.5
+@export_range(0.0, 1.0) var medium_island_chance: float = 0.3
+@export_range(0.0, 1.0) var large_island_chance: float = 0.2
+
+func _ready() -> void:
+	await get_tree().process_frame
+	_generate_grid()
+
+func _generate_grid() -> void:
+	# 1. Cleanup old map
+	for child in get_children():
+		child.queue_free()
+
+	var rng = RandomNumberGenerator.new()
+	rng.seed = world_seed
+
+	# 2. Combine size and margin to get the total stepping distance between centers
+	var total_spacing = cell_size + cell_margin
+
+	# Calculate the exact center offset for positioning using the new total_spacing
+	var offset_x = (grid_width - 1) / 2.0 * total_spacing
+	var offset_z = (grid_depth - 1) / 2.0 * total_spacing
+	
+	var center_x = grid_width / 2
+	var center_z = grid_depth / 2
+
+	# 3. Loop through grid
+	for x in range(grid_width):
+		for z in range(grid_depth):
+			
+			var is_center_tile = (x == center_x and z == center_z)
+			
+			# 4. Density Check
+			if not is_center_tile and rng.randf() > island_density:
+				continue 
+			
+			# 5. Determine island type based on the size dice roll
+			var size_roll = rng.randf()
+			var total_chance = small_island_chance + medium_island_chance + large_island_chance
+			var normalized_roll = size_roll * total_chance 
+			
+			var role_name = ""
+			var color = Color()
+			
+			if normalized_roll < small_island_chance:
+				role_name = "Small_Island"
+				color = Color.BLUE
+			elif normalized_roll < small_island_chance + medium_island_chance:
+				role_name = "Medium_Island"
+				color = Color.GREEN
+			else:
+				role_name = "Large_Island"
+				color = Color.ORANGE
+				
+			# 6. Apply the offset using our total_spacing math
+			var spawn_position = Vector3(
+				(x * total_spacing) - offset_x, 
+				0, 
+				(z * total_spacing) - offset_z
+			)
+			
+			_spawn_island(spawn_position, role_name, rng.randi())
+			#_spawn_placeholder(spawn_position, role_name,color)
+
+func _spawn_island(pos: Vector3, role: String, unique_seed: int) -> void:
+	# 1. Instantiate the actual IslandGenerator scene
+	var island_instance = ISLAND_GENERATOR.instantiate()
+	island_instance.name = role
+	
+	# 2. Calculate physical size based purely on cell_size
+	var current_size: float = 0.0
+	if role == "Small_Island":
+		current_size = cell_size * 0.4 # 40% of the cell
+	elif role == "Medium_Island":
+		current_size = cell_size * 0.7 # 70% of the cell
+	elif role == "Large_Island":
+		current_size = cell_size * 1.0 # 100% of the cell footprint
+		
+	# 3. Pass the variables to your IslandGenerator script
+	island_instance.island_size = current_size
+	island_instance.island_seed = unique_seed
+	
+	# 4. Add it to the tree and set its position
+	add_child(island_instance)
+	island_instance.position = pos
+	
+	# 5. Trigger the generation logic
+	island_instance.generate = true
+	
+	# 6. Save the instanced scene to the editor tree
+	if Engine.is_editor_hint() and get_tree() and get_tree().edited_scene_root:
+		island_instance.owner = get_tree().edited_scene_root
+
+#for debugging only
+#func _spawn_placeholder(pos: Vector3, role: String, color: Color) -> void:
+	#var mesh_instance = MeshInstance3D.new()
+	#mesh_instance.name = role
+	#
+	#var box = BoxMesh.new()
+	#
+	## Change the physical size of the box based on the role 
+	#if role == "Small_Island":
+		#box.size = Vector3(cell_margin * 0.3, 1.0, cell_size * 0.3)
+	#elif role == "Medium_Island":
+		#box.size = Vector3(cell_margin * 0.6, 2.0, cell_size * 0.6)
+	#elif role == "Large_Island":
+		#box.size = Vector3(cell_margin * 0.9, 3.0, cell_size * 0.9)
+		#
+	#mesh_instance.mesh = box
+	#
+	#var material = StandardMaterial3D.new()
+	#material.albedo_color = color
+	#mesh_instance.material_override = material
+	#
+	#add_child(mesh_instance)
+	#mesh_instance.position = pos
+	#
+	## Save the meshes to the editor tree so they don't disappear
+	#if Engine.is_editor_hint():
+		#mesh_instance.owner = get_tree().edited_scene_root

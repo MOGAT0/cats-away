@@ -1,0 +1,107 @@
+[gd_scene format=3 uid="uid://bp7lbaff4wfvf"]
+
+[ext_resource type="Script" uid="uid://dq48egilenekh" path="res://scenes/loading_screen/loading_screen.gd" id="1_q7ync"]
+
+[sub_resource type="Gradient" id="Gradient_3pt2x"]
+colors = PackedColorArray(0.05078125, 0.05078125, 0.05078125, 1, 0.171875, 0.171875, 0.171875, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_q7ync"]
+gradient = SubResource("Gradient_3pt2x")
+fill_from = Vector2(0, 0.73660713)
+fill_to = Vector2(0, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sbunt"]
+bg_color = Color(0.6561392, 0.6561392, 0.6561392, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ug548"]
+bg_color = Color(0.6018299, 0.51444864, 0.19405049, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="LabelSettings" id="LabelSettings_sbunt"]
+font_size = 55
+outline_size = 8
+outline_color = Color(0, 0, 0, 1)
+
+[node name="LoadingScreen" type="Control" unique_id=630569220]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_q7ync")
+
+[node name="ColorRect" type="TextureRect" parent="." unique_id=1358349152]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture2D_q7ync")
+
+[node name="Label" type="RichTextLabel" parent="." unique_id=93762846]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -114.5
+offset_top = -38.0
+offset_right = 114.5
+offset_bottom = 28.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 45
+bbcode_enabled = true
+text = "[pulse][wave]loading...[/wave][/pulse]"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ProgressBar" type="ProgressBar" parent="." unique_id=129164166]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(333, 6.4999695)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.35546875
+anchor_top = 0.5439815
+anchor_right = 0.64453125
+anchor_bottom = 0.5540123
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 26
+theme_override_styles/background = SubResource("StyleBoxFlat_sbunt")
+theme_override_styles/fill = SubResource("StyleBoxFlat_ug548")
+value = 20.45
+show_percentage = false
+metadata/_edit_use_anchors_ = true
+
+[node name="load_percentage" type="Label" parent="." unique_id=398665901]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.48828125
+anchor_top = 0.63271606
+anchor_right = 0.51171875
+anchor_bottom = 0.6851852
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "0%"
+label_settings = SubResource("LabelSettings_sbunt")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true

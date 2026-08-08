@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://blnohhm7hi5pt"]
+
+[ext_resource type="Script" uid="uid://8vy7e4g7n2o3" path="res://procedural island/island generator/island_generator.gd" id="1_4yylb"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_pmmhk"]
+noise_type = 2
+seed = 879903687
+
+[node name="IslandGenerator" type="Node3D" unique_id=1744001876]
+script = ExtResource("1_4yylb")
+island_size = 500.0
+island_seed = 2464708495
+noise = SubResource("FastNoiseLite_pmmhk")
+subdivision = Vector2(300, 300)

@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://bwac1ripq0c8e"]
+
+[ext_resource type="Script" uid="uid://dopf4ibc7sqe7" path="res://procedural island/spawner/island_manager.gd" id="1_bhg1t"]
+
+[node name="IslandManager" type="Node3D" unique_id=1399904875]
+script = ExtResource("1_bhg1t")
+cell_size = 500.0
+cell_margin = 5000.0

@@ -1,0 +1,163 @@
+extends CharacterBody3D
+#class_name Player
+#
+#@onready var camera_3d: Camera3D = %Camera3D
+#@onready var submerge_check: Marker3D = %submerge_check
+#
+#@export var fake_mesh : MeshInstance3D
+#@export var sensitivity : float = 0.005
+#
+#@export_group("Buoyancy Settings")
+#@export var floating_points : Array[Marker3D]
+### Original force when at/above surface
+#@export var surface_float_force : float = 15.0 
+### Lowered force when deep underwater
+#@export var submerged_float_force : float = 5.0
+### How much the water slows the player's falling/rising
+#@export var water_drag : float = 0.05 
+### How much the water slows horizontal swimming speed
+#@export var swim_drag : float = 0.3
+### How fast the player naturally sinks when not swimming
+#@export var sink_speed : float = -0.5
+#
+#var Rot_x : float = 0.0
+#var Rot_y : float = 0.0
+#
+#const SPEED = 5.0
+#const JUMP_VELOCITY = 4.5
+#
+#var is_in_water : bool = false
+#
+#func _ready() -> void:
+	#if fake_mesh:
+		#fake_mesh.queue_free()
+	#
+	#Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+#
+#func _input(event: InputEvent) -> void:
+	#if event is InputEventMouseMotion:
+		#if Input.get_mouse_mode() != Input.MOUSE_MODE_CAPTURED:
+			#return
+		#Rot_y = -event.relative.x * sensitivity
+		#Rot_x = -event.relative.y * sensitivity
+#
+#func camera_handler() -> void:
+	#camera_3d.rotate_x(Rot_x)
+	#rotate_y(Rot_y)
+	#camera_3d.rotation.x = clamp(camera_3d.rotation.x, deg_to_rad(-70), deg_to_rad(60))
+	#Rot_x = 0
+	#Rot_y = 0
+#
+#func _physics_process(delta: float) -> void:
+	#camera_handler()
+	#_handle_buoyancy(delta)
+	#if not is_on_floor() and not is_in_water:
+		#velocity += get_gravity() * delta
+#
+	#if Input.is_action_just_pressed("jump") and is_on_floor() and not is_in_water:
+		#velocity.y = JUMP_VELOCITY
+#
+	#var input_dir := Input.get_vector("a", "d", "w", "s")
+	#var direction := (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
+#
+	#var current_speed = SPEED
+	#var sample_pos = submerge_check.global_position
+	#var water_height = WaterMath.get_water_height(sample_pos)
+#
+	#var depth = water_height - sample_pos.y
+	#if is_in_water or depth > 0.0:
+		#print(depth)
+		#current_speed = SPEED * swim_drag
+	#
+	#if direction:
+		#velocity.x = direction.x * current_speed
+		#velocity.z = direction.z * current_speed
+	#else:
+		#velocity.x = move_toward(velocity.x, 0, current_speed)
+		#velocity.z = move_toward(velocity.z, 0, current_speed)
+#
+	#move_and_slide()
+#
+#func _handle_buoyancy(delta: float) -> void:
+	#if floating_points.is_empty():
+		#return
+		#
+	#var sample_pos = floating_points[0].global_position
+	#var water_height = WaterMath.get_water_height(sample_pos)
+#
+	#var depth = water_height - sample_pos.y
+	#
+	#if depth > 0:
+		#is_in_water = true
+#
+		#var current_float_force = submerged_float_force
+		#if depth < 0.5:
+			#current_float_force = lerp(submerged_float_force, surface_float_force, 1.0 - (depth / 0.5))
+		#
+		#if Input.is_action_pressed("jump"):
+			#velocity.y += current_float_force * depth * delta
+		#else:
+			#velocity.y = move_toward(velocity.y, sink_speed, current_float_force * delta)
+#
+		#velocity.y = lerp(velocity.y, 0.0, water_drag)
+		#
+	#else:
+		#is_in_water = false
+		
+#extends CharacterBody3D
+#class_name Player
+#
+#
+#@onready var camera_3d: Camera3D = %Camera3D
+#
+#@export var fake_mesh : MeshInstance3D
+#@export var sensitivity : float = 0.005
+#
+#@export_group("buoyancy setting")
+#@export var floating_points : Array[Marker3D]
+#
+#var Rot_x : float = 0.0
+#var Rot_y : float = 0.0
+#
+#const SPEED = 5.0
+#const JUMP_VELOCITY = 4.5
+#
+#func _ready() -> void:
+	#fake_mesh.queue_free()
+	#
+	#Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+#
+#func _input(event: InputEvent) -> void:
+	#if event is InputEventMouseMotion:
+		#if Input.get_mouse_mode() != Input.MOUSE_MODE_CAPTURED:
+			#return
+		#Rot_y = -event.relative.x * sensitivity
+		#Rot_x = -event.relative.y * sensitivity
+#
+#func camera_handler() -> void:
+	#camera_3d.rotate_x(Rot_x)
+	#rotate_y(Rot_y)
+	#camera_3d.rotation.x = clamp(camera_3d.rotation.x, deg_to_rad(-70), deg_to_rad(60))
+	#Rot_x = 0
+	#Rot_y = 0
+#
+#func _physics_process(delta: float) -> void:
+	#camera_handler()
+	#
+	#if not is_on_floor():
+		#velocity += get_gravity() * delta
+#
+	#if Input.is_action_just_pressed("jump") and is_on_floor():
+		#velocity.y = JUMP_VELOCITY
+#
+	#var input_dir := Input.get_vector("a", "d", "w", "s")
+	#var direction := (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
+	#
+	#if direction:
+		#velocity.x = direction.x * SPEED
+		#velocity.z = direction.z * SPEED
+	#else:
+		#velocity.x = move_toward(velocity.x, 0, SPEED)
+		#velocity.z = move_toward(velocity.z, 0, SPEED)
+#
+	#move_and_slide()
