@@ -99,16 +99,35 @@ func _process(delta: float) -> void:
 
 
 func apply_driving_forces() -> void:
+	# --- OLD CODE ---
+	# if target_sail_val == 0.0:
+	# 	var forward_dir = -global_transform.basis.z
+	# 	apply_central_force(forward_dir * sail_speed * mass)
+	#
+	# 	var turn_input = (target_steer_val - 0.05) * 20.0
+	# 	var local_ang_vel = global_transform.basis.inverse() * angular_velocity
+	# 	local_ang_vel.y = turn_input * turn_speed
+	# 	angular_velocity = global_transform.basis * local_ang_vel
+	#
+	# 	var local_velocity = global_transform.basis.inverse() * linear_velocity
+	# 	var anti_drift_force = -local_velocity.x * lateral_drag * mass
+	# 	apply_central_force(global_transform.basis.x * anti_drift_force)
+	# ------------------------------
+
+
 	if target_sail_val == 0.0:
 		var forward_dir = -global_transform.basis.z
 		apply_central_force(forward_dir * sail_speed * mass)
 
+	var horizontal_speed = Vector2(linear_velocity.x, linear_velocity.z).length()
+	var local_velocity = global_transform.basis.inverse() * linear_velocity
+
+	if horizontal_speed > 0.5:
 		var turn_input = (target_steer_val - 0.05) * 20.0
 		var local_ang_vel = global_transform.basis.inverse() * angular_velocity
 		local_ang_vel.y = turn_input * turn_speed
 		angular_velocity = global_transform.basis * local_ang_vel
 
-		var local_velocity = global_transform.basis.inverse() * linear_velocity
 		var anti_drift_force = -local_velocity.x * lateral_drag * mass
 		apply_central_force(global_transform.basis.x * anti_drift_force)
 
