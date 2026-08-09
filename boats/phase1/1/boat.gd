@@ -24,14 +24,13 @@ class_name BoatMain
 @export var lateral_drag: float = 5.0
 
 var _points: Array[Marker3D] = []
+@onready var points_cont: Node3D = %points_cont
 
 var current_driver: Player = null
 
-# CHANGED: Replaced single Player variables with Local bools to fix multiplayer overlap
 var local_in_drive_zone: bool = false
 var local_in_sail_zone: bool = false
 
-# Track the peer ID of the active driver. 0 means empty.
 @export var driver_id: int = 0
 
 @export var target_sail_val: float = 0.2
@@ -44,8 +43,8 @@ var submerged_points: int = 0
 
 func _ready() -> void:
 	interact.hide()
-	for path in float_points:
-		_points.append(get_node(path))
+	for p in points_cont.get_children():
+		_points.append(p)
 	
 	sail_animation.play("sail")
 	sail_animation.pause()
@@ -55,8 +54,7 @@ func _ready() -> void:
 
 func _physics_process(delta: float) -> void:
 	fps.text = str(Engine.get_frames_per_second())
-	
-	# ONLY the Server calculates physics forces. Clients just get dragged along by the Synchronizer!
+
 	if not is_multiplayer_authority():
 		return
 		
@@ -83,31 +81,22 @@ func _physics_process(delta: float) -> void:
 		
 		
 func _process(delta: float) -> void:
-	# Animations run locally for everyone based on the synced target values
 	_animate_sail(delta)
 	_animate_steering(delta)
 
-	# CHANGED: Decoupled Driver logic from Sail logic so both can happen at the same time
-	# --- Driver Logic ---
 	if current_driver:
 		current_driver.global_position = driver_pos.global_position
 		
-		# Only the specific player driving is allowed to dismount
 		if driver_id == multiplayer.get_unique_id() and Input.is_action_just_pressed("interact"):
 			rpc_id(1, "server_dismount_driver")
 
 	else:
-		# Ask the server for permission to mount if the local player presses interact
 		if local_in_drive_zone and Input.is_action_just_pressed("interact"):
 			rpc_id(1, "server_mount_driver", multiplayer.get_unique_id())
 
-	# --- Sail Logic ---
-	# Anyone can toggle the sail as long as they are standing in the zone
 	if local_in_sail_zone and Input.is_action_just_pressed("interact"):
 		rpc_id(1, "server_toggle_sail")
 
-
-# --- Physics Functions (Only run by the authority/server) ---
 
 func apply_driving_forces() -> void:
 	if target_sail_val == 0.0:
@@ -140,15 +129,12 @@ func apply_buoyancy(sample_pos: Vector3, _delta: float) -> void:
 		apply_force(final_force, offset)
 
 
-# --- Animation & Steering Update ---
-
 func _animate_sail(delta: float) -> void:
 	current_sail_val = lerp(current_sail_val, target_sail_val, 5.0 * delta)
 	sail_animation.seek(current_sail_val, true)
 
 
 func _animate_steering(delta: float) -> void:
-	# If THIS client is the driver, read keyboard and send it to the server
 	if driver_id == multiplayer.get_unique_id():
 		var new_steer = 0.05
 		if Input.is_physical_key_pressed(KEY_A):
@@ -162,8 +148,6 @@ func _animate_steering(delta: float) -> void:
 	current_steer_val = lerp(current_steer_val, target_steer_val, 20.0 * delta)
 	steering_animation.seek(current_steer_val, true)
 
-
-# --- RPCs (Networked Interactions) ---
 
 @rpc("any_peer", "call_local", "reliable")
 func server_mount_driver(peer_id: int) -> void:
@@ -191,7 +175,6 @@ func server_toggle_sail() -> void:
 
 @rpc("any_peer", "call_local", "unreliable")
 func server_steer(steer_val: float) -> void:
-	# CHANGED: Strictly verifies that only the recognized driver can send steering RPCs
 	if multiplayer.get_remote_sender_id() == driver_id:
 		target_steer_val = steer_val
 
@@ -205,12 +188,9 @@ func sync_driver_state(peer_id: int) -> void:
 				current_driver.set_is_driving(false)
 			current_driver.global_position = driver_dismout_pos.global_position
 			current_driver = null
-			
-		# CHANGED: Only show interact if the local player is the one standing near the wheel
 		if local_in_drive_zone:
 			interact.show()
 	else:
-		# CHANGED: Don't hide the interact prompt if the player is standing next to the sail!
 		if not local_in_sail_zone:
 			interact.hide()
 			
@@ -221,9 +201,6 @@ func sync_driver_state(peer_id: int) -> void:
 					current_driver.set_is_driving(true)
 				break
 
-
-# --- Signals ---
-# CHANGED: Updated all Area3D signals to perfectly track ONLY the local player
 func _on_drive_body_entered(body: Node3D) -> void:
 	if body is Player and body.name.to_int() == multiplayer.get_unique_id():
 		local_in_drive_zone = true

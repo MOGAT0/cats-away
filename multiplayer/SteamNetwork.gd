@@ -9,9 +9,9 @@ const BOAT = preload("uid://i1deoi48p6g2")
 const ISLAND_MANAGER = preload("uid://bwac1ripq0c8e")
 const STYLIZED_OCEAN = preload("uid://c1kir5hwgtvdu")
 
-
 const GAME_PORT: int = 8910
 const BROADCAST_PORT: int = 8911
+const MAX_PLAYER : int = 4
 
 var peer: ENetMultiplayerPeer
 var is_host: bool = false
@@ -23,11 +23,11 @@ var broadcast_timer: float = 0.0
 var found_servers: Array = []
 
 func _ready() -> void:
-	var ins_island = ISLAND_MANAGER.instantiate()
+	#var ins_island = ISLAND_MANAGER.instantiate()
 	#get_tree().current_scene.add_child(ins_island)
 	
-	var ins_ocean = STYLIZED_OCEAN.instantiate()
-	get_tree().current_scene.add_child(ins_ocean)
+	#var ins_ocean = STYLIZED_OCEAN.instantiate()
+	#get_tree().current_scene.add_child(ins_ocean)
 	
 	
 	multiplayer.peer_connected.connect(_on_peer_connected)
@@ -43,14 +43,14 @@ func _process(delta: float) -> void:
 	if is_host and broadcaster != null:
 		broadcast_timer += delta
 		if broadcast_timer > 1.0:
-			broadcaster.put_packet("PuffyPlaneServer".to_ascii_buffer())
+			broadcaster.put_packet("CatsAway".to_ascii_buffer())
 			broadcast_timer = 0.0
 			
 	# If we are listening, check for incoming shouts
 	if listener != null and listener.is_bound():
 		while listener.get_available_packet_count() > 0:
 			var packet = listener.get_packet().get_string_from_ascii()
-			if packet == "PuffyPlaneServer":
+			if packet == "CatsAway":
 				var server_ip = listener.get_packet_ip()
 				if not found_servers.has(server_ip):
 					found_servers.append(server_ip)
@@ -73,7 +73,7 @@ func _create_server_button(ip_address: String) -> void:
 
 func host_lobby() -> void:
 	peer = ENetMultiplayerPeer.new()
-	var error = peer.create_server(GAME_PORT, 8)
+	var error = peer.create_server(GAME_PORT, MAX_PLAYER)
 	if error != OK:
 		print("Failed to host server: ", error)
 		return

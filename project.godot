@@ -31,9 +31,13 @@ GlobalScript="*uid://hd863e3klkbo"
 gdscript/warnings/integer_division=0
 gdscript/warnings/int_as_enum_without_cast=0
 
+[display]
+
+window/stretch/mode="viewport"
+
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/godotsteam/plugin.cfg", "res://addons/jigglebones/plugin.cfg")
+enabled=PackedStringArray("res://addons/jigglebones/plugin.cfg")
 
 [input]
 
@@ -76,7 +80,7 @@ run={
 [layer_names]
 
 3d_physics/layer_1="player_col"
-3d_physics/layer_2="vault_col"
+3d_physics/layer_2="vault"
 3d_physics/layer_3="ground_col"
 3d_physics/layer_4="ground detector"
 
