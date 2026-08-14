@@ -46,12 +46,16 @@ func _ready() -> void:
 	#get_tree().current_scene.add_child(ins_ocean)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 	
 >>>>>>> parent of 419b7ef (attack and draggable objects)
 =======
 	
 >>>>>>> parent of 419b7ef (attack and draggable objects)
+=======
+	
+>>>>>>> parent of 5b0d4c7 (feat: spawn sync)
 	
 	multiplayer.peer_connected.connect(_on_peer_connected)
 	multiplayer.peer_disconnected.connect(_on_peer_disconnected)
@@ -70,6 +74,7 @@ func _process(delta: float) -> void:
 			broadcast_timer = 0.0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 			
@@ -79,6 +84,10 @@ func _process(delta: float) -> void:
 			
 	# If we are listening, check for incoming shouts
 >>>>>>> parent of 419b7ef (attack and draggable objects)
+=======
+			
+	# If we are listening, check for incoming shouts
+>>>>>>> parent of 5b0d4c7 (feat: spawn sync)
 	if listener != null and listener.is_bound():
 		while listener.get_available_packet_count() > 0:
 			var packet = listener.get_packet().get_string_from_ascii()
@@ -127,6 +136,7 @@ func join_lobby(ip_address: String) -> void:
 	# Stop listening for new servers once we join one
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 	if listener != null:
 		listener.close()
@@ -134,6 +144,8 @@ func join_lobby(ip_address: String) -> void:
 =======
 =======
 >>>>>>> parent of 419b7ef (attack and draggable objects)
+=======
+>>>>>>> parent of 5b0d4c7 (feat: spawn sync)
 	listener.close()
 	
 >>>>>>> parent of 419b7ef (attack and draggable objects)
@@ -151,6 +163,7 @@ func join_lobby(ip_address: String) -> void:
 func _on_peer_connected(id: int) -> void:
 	print("Peer connected: ", id)
 	if multiplayer.is_server():
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -174,6 +187,10 @@ func _on_peer_connected(id: int) -> void:
 		add_player(id)
 >>>>>>> parent of 419b7ef (attack and draggable objects)
 
+=======
+		add_player(id)
+
+>>>>>>> parent of 5b0d4c7 (feat: spawn sync)
 # Server-side callback when a client disconnects
 func _on_peer_disconnected(id: int) -> void:
 	print("Peer disconnected: ", id)
@@ -212,10 +229,15 @@ func add_player(id: int) -> void:
 func remove_player(id: int) -> void:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	for player_node in get_tree().get_nodes_in_group("player"):
 		if player_node.name == str(id):
 			player_node.queue_free()
 			break
+=======
+	if has_node(str(id)):
+		get_node(str(id)).queue_free()
+>>>>>>> parent of 5b0d4c7 (feat: spawn sync)
 
 =======
 >>>>>>> parent of 419b7ef (attack and draggable objects)
