@@ -25,8 +25,11 @@ func _process(delta: float) -> void:
 		if player.is_driving:
 			target_state = "idle"
 <<<<<<< HEAD
+<<<<<<< HEAD
 		#elif Input.is_action_just_pressed("attack"):
 			#target_state = "attack"
+=======
+>>>>>>> parent of 419b7ef (attack and draggable objects)
 =======
 >>>>>>> parent of 419b7ef (attack and draggable objects)
 		elif !player.ground_collider.is_colliding() and !player.is_on_floor():

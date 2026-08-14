@@ -84,8 +84,11 @@ run={
 3d_physics/layer_3="ground_col"
 3d_physics/layer_4="ground detector"
 <<<<<<< HEAD
+<<<<<<< HEAD
 3d_physics/layer_5="dragable object"
 =======
+=======
+>>>>>>> parent of 419b7ef (attack and draggable objects)
 
 [steam]
 

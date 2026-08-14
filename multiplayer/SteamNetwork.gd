@@ -24,6 +24,7 @@ var found_servers: Array = []
 
 func _ready() -> void:
 <<<<<<< HEAD
+<<<<<<< HEAD
 	if enable_island:
 		var ins_island = ISLAND_MANAGER.instantiate()
 		get_tree().current_scene.add_child(ins_island)
@@ -36,12 +37,18 @@ func _ready() -> void:
 
 =======
 >>>>>>> parent of 419b7ef (attack and draggable objects)
+=======
+>>>>>>> parent of 419b7ef (attack and draggable objects)
 	#var ins_island = ISLAND_MANAGER.instantiate()
 	#get_tree().current_scene.add_child(ins_island)
 	
 	#var ins_ocean = STYLIZED_OCEAN.instantiate()
 	#get_tree().current_scene.add_child(ins_ocean)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+	
+>>>>>>> parent of 419b7ef (attack and draggable objects)
 =======
 	
 >>>>>>> parent of 419b7ef (attack and draggable objects)
@@ -62,7 +69,12 @@ func _process(delta: float) -> void:
 			broadcaster.put_packet("CatsAway".to_ascii_buffer())
 			broadcast_timer = 0.0
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+			
+	# If we are listening, check for incoming shouts
+>>>>>>> parent of 419b7ef (attack and draggable objects)
 =======
 			
 	# If we are listening, check for incoming shouts
@@ -114,11 +126,14 @@ func host_lobby() -> void:
 func join_lobby(ip_address: String) -> void:
 	# Stop listening for new servers once we join one
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 	if listener != null:
 		listener.close()
 
 =======
+=======
+>>>>>>> parent of 419b7ef (attack and draggable objects)
 	listener.close()
 	
 >>>>>>> parent of 419b7ef (attack and draggable objects)
@@ -137,6 +152,7 @@ func _on_peer_connected(id: int) -> void:
 	print("Peer connected: ", id)
 	if multiplayer.is_server():
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 		add_player(id)
 
@@ -151,6 +167,9 @@ func _on_peer_connected(id: int) -> void:
 		rpc("spawn_player", id, spawn_point.global_position)
 
 		add_player(id)
+=======
+		add_player(id)
+>>>>>>> parent of 419b7ef (attack and draggable objects)
 =======
 		add_player(id)
 >>>>>>> parent of 419b7ef (attack and draggable objects)
@@ -192,11 +211,14 @@ func add_player(id: int) -> void:
 
 func remove_player(id: int) -> void:
 <<<<<<< HEAD
+<<<<<<< HEAD
 	for player_node in get_tree().get_nodes_in_group("player"):
 		if player_node.name == str(id):
 			player_node.queue_free()
 			break
 
+=======
+>>>>>>> parent of 419b7ef (attack and draggable objects)
 =======
 >>>>>>> parent of 419b7ef (attack and draggable objects)
 	if has_node(str(id)):

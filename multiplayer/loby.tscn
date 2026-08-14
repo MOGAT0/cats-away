@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://b26qe08vra8d4"]
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 [ext_resource type="Script" uid="uid://c2lyi7dy0mm4t" path="res://multiplayer/SteamNetwork.gd" id="1_vqpg3"]
 [ext_resource type="PackedScene" uid="uid://bs1u5ylhfhwev" path="res://entities/player/player.scn" id="2_0rcny"]
 [ext_resource type="Material" uid="uid://lyrpj8ak5yl5" path="res://assets/shaders/grid.tres" id="2_tnuqa"]
@@ -126,6 +127,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.961536, 1.6446342, 0)
 [ext_resource type="PackedScene" uid="uid://i1deoi48p6g2" path="res://boats/phase1/1/boat.tscn" id="4_7kn0l"]
 [ext_resource type="PackedScene" uid="uid://cwb4ce6w4ig5q" path="res://ocean simulation/moving object/moving_platform.tscn" id="5_7kn0l"]
 
+=======
+[ext_resource type="Script" uid="uid://c2lyi7dy0mm4t" path="res://multiplayer/SteamNetwork.gd" id="1_tnuqa"]
+[ext_resource type="PackedScene" uid="uid://bs1u5ylhfhwev" path="res://entities/player/player.scn" id="2_tnuqa"]
+[ext_resource type="Texture2D" uid="uid://c5v3wocjpax1o" path="res://assets/img/grid/texture_04.png" id="3_tnuqa"]
+[ext_resource type="PackedScene" uid="uid://i1deoi48p6g2" path="res://boats/phase1/1/boat.tscn" id="4_7kn0l"]
+[ext_resource type="PackedScene" uid="uid://cwb4ce6w4ig5q" path="res://ocean simulation/moving object/moving_platform.tscn" id="5_7kn0l"]
+
+>>>>>>> parent of 419b7ef (attack and draggable objects)
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_vqpg3"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
 ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -159,17 +168,41 @@ shadow_enabled = true
 [node name="spawnPoint" type="Marker3D" parent="." unique_id=867145826]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.105507, 8.50195, 0)
+<<<<<<< HEAD
+>>>>>>> parent of 419b7ef (attack and draggable objects)
+=======
 >>>>>>> parent of 419b7ef (attack and draggable objects)
 
 [node name="CSGCombiner3D" type="CSGCombiner3D" parent="." unique_id=553892116]
 material_override = ExtResource("2_tnuqa")
 use_collision = true
 <<<<<<< HEAD
+<<<<<<< HEAD
 collision_layer = 6
 collision_mask = 6
 =======
 collision_layer = 15
 collision_mask = 15
+>>>>>>> parent of 419b7ef (attack and draggable objects)
+=======
+collision_layer = 15
+collision_mask = 15
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D" unique_id=1673867304]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -15.290508, 0)
+size = Vector3(50, 30.453, 50)
+material = SubResource("StandardMaterial3D_vfi67")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGCombiner3D" unique_id=1093463083]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -12.066581, 0)
+size = Vector3(30, 28.503645, 30)
+material = SubResource("StandardMaterial3D_vfi67")
+
+[node name="MovingPlatform" parent="." unique_id=224295075 instance=ExtResource("5_7kn0l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.908613, 3.3724022, -8.537756)
+
+[node name="boat" parent="." unique_id=1535798592 instance=ExtResource("4_7kn0l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.404793, 3.0184212, 8.157507)
 >>>>>>> parent of 419b7ef (attack and draggable objects)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D" unique_id=690864523]
@@ -281,6 +314,9 @@ metadata/_edit_use_anchors_ = true
 [node name="server_list" type="VBoxContainer" parent="ui/Control/Panel" unique_id=1228092594]
 unique_name_in_owner = true
 layout_mode = 2
+<<<<<<< HEAD
+>>>>>>> parent of 419b7ef (attack and draggable objects)
+=======
 >>>>>>> parent of 419b7ef (attack and draggable objects)
 
 [connection signal="pressed" from="ui/Control/Host" to="." method="_on_button_pressed"]
