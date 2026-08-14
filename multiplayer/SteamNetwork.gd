@@ -16,7 +16,6 @@ const MAX_PLAYER : int = 4
 var peer: ENetMultiplayerPeer
 var is_host: bool = false
 
-# LAN Discovery Variables
 var broadcaster: PacketPeerUDP
 var listener: PacketPeerUDP
 var broadcast_timer: float = 0.0
@@ -26,27 +25,24 @@ func _ready() -> void:
 	#var ins_island = ISLAND_MANAGER.instantiate()
 	#get_tree().current_scene.add_child(ins_island)
 	
-	#var ins_ocean = STYLIZED_OCEAN.instantiate()
-	#get_tree().current_scene.add_child(ins_ocean)
-	
+	var ins_ocean = STYLIZED_OCEAN.instantiate()
+	get_tree().current_scene.add_child(ins_ocean)
 	
 	multiplayer.peer_connected.connect(_on_peer_connected)
 	multiplayer.peer_disconnected.connect(_on_peer_disconnected)
 	multiplayer.connected_to_server.connect(_on_connected_to_server)
 	multiplayer.connection_failed.connect(_on_connection_failed)
-	
-	# Automatically start listening for servers as soon as the game opens
+
 	start_listening()
 
 func _process(delta: float) -> void:
-	# If we are the host, shout our existence to the network every 1 second
+
 	if is_host and broadcaster != null:
 		broadcast_timer += delta
 		if broadcast_timer > 1.0:
 			broadcaster.put_packet("CatsAway".to_ascii_buffer())
 			broadcast_timer = 0.0
-			
-	# If we are listening, check for incoming shouts
+
 	if listener != null and listener.is_bound():
 		while listener.get_available_packet_count() > 0:
 			var packet = listener.get_packet().get_string_from_ascii()
@@ -82,17 +78,14 @@ func host_lobby() -> void:
 	is_host = true
 	print("Host started on port: ", GAME_PORT)
 	
-	# Stop listening and start broadcasting
 	listener.close()
 	broadcaster = PacketPeerUDP.new()
 	broadcaster.set_broadcast_enabled(true)
 	broadcaster.set_dest_address("255.255.255.255", BROADCAST_PORT)
-	
-	# Spawn host player
-	add_player(1)
+
+	spawn_player(1, spawn_point.global_position)
 
 func join_lobby(ip_address: String) -> void:
-	# Stop listening for new servers once we join one
 	listener.close()
 	
 	peer = ENetMultiplayerPeer.new()
@@ -105,16 +98,28 @@ func join_lobby(ip_address: String) -> void:
 	print("Connecting to host at: ", ip_address)
 	%ui.hide()
 
-# Server-side callback when a new client connects
 func _on_peer_connected(id: int) -> void:
 	print("Peer connected: ", id)
 	if multiplayer.is_server():
-		add_player(id)
+		# OLD
+		# for child in get_children():
+		# 	if child.name.is_valid_int():
+		# 		rpc_id(id, "spawn_player", child.name.to_int(), child.global_position)
 
-# Server-side callback when a client disconnects
+		for player_node in get_tree().get_nodes_in_group("player"):
+			var existing_id = player_node.name.to_int()
+			if existing_id > 0 and existing_id != id:
+				rpc_id(id, "spawn_player", existing_id, player_node.global_position)
+
+				if player_node.get_parent() != self:
+					rpc_id(id, "sync_player_parent", existing_id, player_node.get_parent().get_path())
+
+		rpc("spawn_player", id, spawn_point.global_position)
+
 func _on_peer_disconnected(id: int) -> void:
 	print("Peer disconnected: ", id)
-	remove_player(id)
+	if multiplayer.is_server():
+		rpc("remove_player", id)
 
 func _on_connected_to_server() -> void:
 	print("Successfully connected to host.")
@@ -122,33 +127,31 @@ func _on_connected_to_server() -> void:
 func _on_connection_failed() -> void:
 	print("Failed to connect to host.")
 
-func add_player(id: int) -> void:
-	var player = player_scene.instantiate() as Player
+@rpc("authority", "call_local", "reliable")
+func spawn_player(id: int, spawn_pos: Vector3) -> void:
+	var player = player_scene.instantiate()
 	player.name = str(id)
+	player.global_position = spawn_pos
+	add_child(player)
+	print(player.name, " : " ,player.global_position)
 
-	# Everyone spawns at the exact same spawn point now
-	player.global_position = spawn_point.global_position
-			
-	call_deferred("add_child", player)
+@rpc("authority", "call_remote", "reliable")
+func sync_player_parent(player_id: int, parent_path: NodePath) -> void:
+	var player_node = get_node_or_null(str(player_id))
+	var parent_node = get_node_or_null(parent_path)
+	if player_node and parent_node:
+		player_node.reparent(parent_node, true)
 
-#func add_player(id: int) -> void:
-	#var player = player_scene.instantiate() as Player
-	#player.name = str(id)
-#
-	#if id == 1:
-		#player.global_position = spawn_point.global_position
-	#else:
-		#if has_node("1"):
-			#var host_node = get_node("1")
-			#player.global_position = host_node.global_position + Vector3(0, 2, 0)
-		#else:
-			#player.global_position = spawn_point.global_position
-			#
-	#call_deferred("add_child", player)
-
+@rpc("authority", "call_local", "reliable")
 func remove_player(id: int) -> void:
-	if has_node(str(id)):
-		get_node(str(id)).queue_free()
+	# OLD
+	# if has_node(str(id)):
+	# 	get_node(str(id)).queue_free()
+
+	for player_node in get_tree().get_nodes_in_group("player"):
+		if player_node.name == str(id):
+			player_node.queue_free()
+			break
 
 func _on_button_pressed() -> void:
 	host_lobby()
