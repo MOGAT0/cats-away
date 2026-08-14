@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://i1deoi48p6g2"]
 
 [ext_resource type="Script" uid="uid://bkl8wq7tj4n03" path="res://boats/phase1/1/boat.gd" id="1_ecdsm"]
+[ext_resource type="PackedScene" uid="uid://bjv8phctnjwaj" path="res://extras/vaulting/vault_detector.tscn" id="2_svmsk"]
 [ext_resource type="Shader" uid="uid://ekjinuy0cqr1" path="res://assets/shaders/outline.gdshader" id="8_b82kb"]
 [ext_resource type="Texture2D" uid="uid://eb6umvcjl4vv" path="res://assets/3d model/boats/phase2/raft_plank_Texture.png" id="8_ecdsm"]
 [ext_resource type="Texture2D" uid="uid://dblye33tqbttf" path="res://assets/3d model/boats/phase2/raft_plank_normal.png" id="9_tq1kx"]
@@ -21,14 +22,19 @@
 [ext_resource type="Texture2D" uid="uid://yl0pevjr4a24" path="res://assets/3d model/boats/phase2/raft_Stylized_03_Wood_Planks_normal.jpg" id="24_1ybug"]
 [ext_resource type="Texture2D" uid="uid://cd770bdwooggt" path="res://assets/3d model/boats/phase2/raft_stylized_Bark_004_Base_Color.jpg" id="25_26m0u"]
 [ext_resource type="Texture2D" uid="uid://dd5mwe445k2e0" path="res://assets/3d model/boats/phase2/raft_stylized_Bark_004_Normal.jpg" id="26_ko3ug"]
-[ext_resource type="Script" uid="uid://cvkiksshk0ld4" path="res://boats/phase1/1/boat_patform.gd" id="26_rdiob"]
 [ext_resource type="Texture2D" uid="uid://2ga0j7wmi3k3" path="res://assets/3d model/boats/phase2/raft_Carved wood _BaseColor.jpg" id="27_53yfd"]
 [ext_resource type="Texture2D" uid="uid://b2nhnx4tpec6w" path="res://assets/3d model/boats/phase2/raft_Carved wood _Normal.jpg" id="28_altta"]
 [ext_resource type="Texture2D" uid="uid://cgxvagithj0o8" path="res://assets/3d model/boats/phase2/raft_sail_texture.png" id="29_p5wdu"]
 [ext_resource type="Script" uid="uid://c3xvgi2fsmrqs" path="res://boats/phase1/1/ridable.gd" id="30_tq1kx"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_rdiob"]
-size = Vector3(5.99, 1, 11.7)
+[sub_resource type="BoxShape3D" id="BoxShape3D_cp2l6"]
+size = Vector3(5.48, 0.706, 10.52)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3ovn4"]
+size = Vector3(5.09, 1.401, 8.3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6xu3l"]
+size = Vector3(1.625, 0.47126174, 4.745)
 
 [sub_resource type="Shader" id="Shader_tq1kx"]
 code = "shader_type spatial;
@@ -573,7 +579,7 @@ height = 5.8085938
 radius = 0.595
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_tq1kx"]
-size = Vector3(5.04, 8.992, 9.345)
+size = Vector3(5.855, 9.723951, 13.08)
 
 [sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_b82kb"]
 properties/0/path = NodePath(".:position")
@@ -595,7 +601,7 @@ properties/5/path = NodePath(".:target_steer_val")
 properties/5/spawn = true
 properties/5/replication_mode = 1
 
-[node name="boat" type="RigidBody3D" unique_id=2113742574 groups=["draggable"]]
+[node name="boat" type="RigidBody3D" unique_id=2113742574]
 collision_layer = 2
 collision_mask = 2
 script = ExtResource("1_ecdsm")
@@ -649,9 +655,9 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=252252530]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.3810287, 0)
-shape = SubResource("BoxShape3D_rdiob")
-debug_color = Color(0.5643921, 1, 0.0859375, 0.41960785)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.2036421, 0)
+shape = SubResource("BoxShape3D_cp2l6")
+debug_fill = false
 
 [node name="points_cont" type="Node3D" parent="." unique_id=1939014440]
 unique_name_in_owner = true
@@ -667,6 +673,16 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.24024, -0.38, 5.337653)
 
 [node name="point4" type="Marker3D" parent="points_cont" unique_id=739719725]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.247031, -0.38, 5.337653)
+
+[node name="vault_detector" parent="." unique_id=1327905569 instance=ExtResource("2_svmsk")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="vault_detector" unique_id=1236646647]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.14489198, 0)
+shape = SubResource("BoxShape3D_3ovn4")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="vault_detector" unique_id=640546203]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6096615, 0)
+shape = SubResource("BoxShape3D_6xu3l")
 
 [node name="driver_pos" type="Marker3D" parent="." unique_id=670613841]
 unique_name_in_owner = true
@@ -721,11 +737,10 @@ blend_shapes/sail = 0.0
 
 [node name="patform" type="StaticBody3D" parent="raft" unique_id=2119200646]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7757467, 0)
-collision_layer = 29
-collision_mask = 31
-script = ExtResource("26_rdiob")
+collision_layer = 13
+collision_mask = 13
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="raft/patform" unique_id=1937921241 groups=["obj_collider"]]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="raft/patform" unique_id=1937921241]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.12347388, 0)
 shape = SubResource("ConcavePolygonShape3D_8oq56")
 debug_fill = false
@@ -752,18 +767,20 @@ shape = SubResource("CylinderShape3D_ecdsm")
 
 [node name="ridable" type="Area3D" parent="." unique_id=1365699335]
 unique_name_in_owner = true
-collision_layer = 9
-collision_mask = 9
+collision_layer = 15
+collision_mask = 15
 script = ExtResource("30_tq1kx")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ridable" unique_id=589890254]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.585593, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.2196226, 0)
 shape = SubResource("BoxShape3D_tq1kx")
-debug_color = Color(1, 0.7264263, 0, 0.41960785)
+debug_color = Color(0.08774509, 0, 0.70196074, 0.41960785)
 
 [node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="." unique_id=1564846061]
 replication_config = SubResource("SceneReplicationConfig_b82kb")
 
+[connection signal="body_entered" from="vault_detector" to="vault_detector" method="_on_body_entered"]
+[connection signal="body_exited" from="vault_detector" to="vault_detector" method="_on_body_exited"]
 [connection signal="body_entered" from="drive" to="." method="_on_drive_body_entered"]
 [connection signal="body_exited" from="drive" to="." method="_on_drive_body_exited"]
 [connection signal="body_entered" from="sail" to="." method="_on_sail_body_entered"]

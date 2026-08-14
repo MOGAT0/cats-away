@@ -53,9 +53,6 @@ func _ready() -> void:
 
 
 func _physics_process(delta: float) -> void:
-	print(%ridable.has_passengers())
-	
-	
 	fps.text = str(Engine.get_frames_per_second())
 
 	if not is_multiplayer_authority():

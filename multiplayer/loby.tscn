@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://b26qe08vra8d4"]
 
+<<<<<<< HEAD
 [ext_resource type="Script" uid="uid://c2lyi7dy0mm4t" path="res://multiplayer/SteamNetwork.gd" id="1_vqpg3"]
 [ext_resource type="PackedScene" uid="uid://bs1u5ylhfhwev" path="res://entities/player/player.scn" id="2_0rcny"]
 [ext_resource type="Material" uid="uid://lyrpj8ak5yl5" path="res://assets/shaders/grid.tres" id="2_tnuqa"]
@@ -118,12 +119,58 @@ enable_ocean = true
 [node name="spawnPoint" type="Marker3D" parent="." unique_id=1895773106]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.961536, 1.6446342, 0)
+=======
+[ext_resource type="Script" uid="uid://c2lyi7dy0mm4t" path="res://multiplayer/SteamNetwork.gd" id="1_tnuqa"]
+[ext_resource type="PackedScene" uid="uid://bs1u5ylhfhwev" path="res://entities/player/player.scn" id="2_tnuqa"]
+[ext_resource type="Texture2D" uid="uid://c5v3wocjpax1o" path="res://assets/img/grid/texture_04.png" id="3_tnuqa"]
+[ext_resource type="PackedScene" uid="uid://i1deoi48p6g2" path="res://boats/phase1/1/boat.tscn" id="4_7kn0l"]
+[ext_resource type="PackedScene" uid="uid://cwb4ce6w4ig5q" path="res://ocean simulation/moving object/moving_platform.tscn" id="5_7kn0l"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_vqpg3"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_tnuqa"]
+sky_material = SubResource("ProceduralSkyMaterial_vqpg3")
+
+[sub_resource type="Environment" id="Environment_0rcny"]
+background_mode = 2
+sky = SubResource("Sky_tnuqa")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0rcny"]
+albedo_texture = ExtResource("3_tnuqa")
+uv1_triplanar = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vfi67"]
+
+[node name="Loby" type="Node3D" unique_id=1306479755]
+script = ExtResource("1_tnuqa")
+player_scene = ExtResource("2_tnuqa")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1667408417]
+environment = SubResource("Environment_0rcny")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=558773596]
+transform = Transform3D(-0.8660254, -0.4285837, -0.25751904, 0, -0.515038, 0.8571673, -0.50000006, 0.74232864, 0.44603598, 0, 0, 0)
+shadow_enabled = true
+
+[node name="spawnPoint" type="Marker3D" parent="." unique_id=867145826]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.105507, 8.50195, 0)
+>>>>>>> parent of 419b7ef (attack and draggable objects)
 
 [node name="CSGCombiner3D" type="CSGCombiner3D" parent="." unique_id=553892116]
 material_override = ExtResource("2_tnuqa")
 use_collision = true
+<<<<<<< HEAD
 collision_layer = 6
 collision_mask = 6
+=======
+collision_layer = 15
+collision_mask = 15
+>>>>>>> parent of 419b7ef (attack and draggable objects)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D" unique_id=690864523]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -8.311523, 0)
@@ -143,9 +190,14 @@ tonemap_exposure = 1.5
 wind_direction = 2.35619451204804
 metadata/_custom_type_script = "uid://deo0gxkmk2ahd"
 
+<<<<<<< HEAD
 [node name="SunLight" type="DirectionalLight3D" parent="Sky3D" unique_id=2067233996]
 transform = Transform3D(0.9985913, 0.04123192, -0.03339601, 0, 0.62940073, 0.7770809, 0.05306001, -0.7759862, 0.6285141, -0.03339601, 0.7770809, 0.6285141)
 shadow_enabled = true
+=======
+[node name="boat" parent="." unique_id=1535798592 instance=ExtResource("4_7kn0l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.404793, 3.0184212, 8.157507)
+>>>>>>> parent of 419b7ef (attack and draggable objects)
 
 [node name="MoonLight" type="DirectionalLight3D" parent="Sky3D" unique_id=1273242535]
 transform = Transform3D(0, -0.96049464, 0.27829847, 0.6677828, 0.2071532, 0.71495014, -0.7443562, 0.18584293, 0.64140177, 0.27829847, 0.71495014, 0.64140177)
@@ -222,6 +274,13 @@ anchor_bottom = 1.0
 offset_top = -1.5258789e-05
 grow_horizontal = 2
 grow_vertical = 0
+<<<<<<< HEAD
 metadata/_edit_use_anchors_ = true
+=======
+
+[node name="server_list" type="VBoxContainer" parent="ui/Control/Panel" unique_id=1228092594]
+unique_name_in_owner = true
+layout_mode = 2
+>>>>>>> parent of 419b7ef (attack and draggable objects)
 
 [connection signal="pressed" from="ui/Control/Host" to="." method="_on_button_pressed"]
