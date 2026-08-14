@@ -1,4 +1,5 @@
 shader_type spatial;
+render_mode cull_back;
 
 group_uniforms Shader.Albedo;
 uniform vec4 albedo_color : source_color  = vec4(1.0);

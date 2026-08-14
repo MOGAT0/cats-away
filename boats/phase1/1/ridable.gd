@@ -3,11 +3,22 @@ extends Area3D
 @onready var boat: RigidBody3D = get_parent()
 @onready var ridable: Area3D = %ridable
 
+var players_inside : Array[Player] = []
+
+func has_passengers() -> bool:
+	return false if players_inside.is_empty() else true
+
 func _on_body_entered(body: Node3D) -> void:
 	if body is Player:
 		if body.current_boat == boat: return
 		body.current_boat = boat
-		print("enter")
+
+		if not players_inside.has(body):
+			players_inside.append(body)
+			
+		if players_inside.size() > 0:
+			add_to_group("draggable")
+		
 		body.set_is_riding_boat(true)
 
 func _on_body_exited(body: Node3D) -> void:
@@ -16,25 +27,9 @@ func _on_body_exited(body: Node3D) -> void:
 			return
 		if body.current_boat == boat:
 			body.current_boat = null
-			print("exit")
-			body.set_is_riding_boat(false)
+			players_inside.erase(body)
 
-##ridable.gd
-#extends Area3D
-#
-#@onready var boat: RigidBody3D = get_parent()
-#@onready var ridable: Area3D = %ridable
-#
-#func _on_body_entered(body: Node3D) -> void:
-	#if body is Player:
-		#if body.current_boat == boat:return
-		#body.current_boat = boat
-		#print("enter")
-		#body.set_is_riding_boat(true)
-#
-#func _on_body_exited(body: Node3D) -> void:
-	#if body is Player:
-		#if body.current_boat == boat and not body.is_riding_boat:
-			#body.current_boat = null
-			#print("exit")
-		#body.set_is_riding_boat(false)
+			if players_inside.is_empty():
+				remove_from_group("draggable")
+
+			body.set_is_riding_boat(false)
