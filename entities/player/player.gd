@@ -96,18 +96,21 @@ func _reparent_with_shield(new_parent_path: NodePath) -> void:
 		
 	is_reparenting = true        
 	reparent(new_parent, true)
+	rotation.x = 0
+	rotation.z = 0
 	await get_tree().create_timer(0.5).timeout
 	is_reparenting = false
 
 func _physics_process(delta: float) -> void:
 	if not is_multiplayer_authority():
 		return
-
+	WaterMath.tracked_position = global_position
 	if is_driving:
 		camera_handler()
+		rpc("sync_transform", transform)
 		return
 	
-	WaterMath.tracked_position = global_position
+	
 	if static_character:
 		input_dir = Vector2.ZERO
 	else:
