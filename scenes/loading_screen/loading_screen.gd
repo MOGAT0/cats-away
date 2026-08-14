@@ -11,7 +11,7 @@ var scene_load_status = 0
 func _ready() -> void:
 	req_scene_path = GlobalScript.next_scene
 	ResourceLoader.load_threaded_request(req_scene_path)
-	#print(req_scene_path)
+	print(req_scene_path)
 
 func _process(delta: float) -> void:
 	scene_load_status = ResourceLoader.load_threaded_get_status(req_scene_path,progress)
