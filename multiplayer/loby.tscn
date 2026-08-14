@@ -5,7 +5,10 @@
 [ext_resource type="Texture2D" uid="uid://c5v3wocjpax1o" path="res://assets/img/grid/texture_04.png" id="3_tnuqa"]
 [ext_resource type="PackedScene" uid="uid://i1deoi48p6g2" path="res://boats/phase1/1/boat.tscn" id="4_7kn0l"]
 [ext_resource type="PackedScene" uid="uid://cwb4ce6w4ig5q" path="res://ocean simulation/moving object/moving_platform.tscn" id="5_7kn0l"]
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of 5b0d4c7 (feat: spawn sync)
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_vqpg3"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -147,6 +150,11 @@ player_scene = ExtResource("2_tnuqa")
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.106, 4, 0)
 
+[node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="." unique_id=1672226273]
+_spawnable_scenes = PackedStringArray("uid://bs1u5ylhfhwev")
+spawn_path = NodePath("..")
+spawn_limit = 4
+
 [node name="CSGCombiner3D" type="CSGCombiner3D" parent="." unique_id=137180186]
 material_override = SubResource("StandardMaterial3D_0rcny")
 use_collision = true
@@ -163,12 +171,19 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -12.066581, 0)
 size = Vector3(30, 28.503645, 30)
 material = SubResource("StandardMaterial3D_vfi67")
 
+[node name="MovingPlatform" parent="." unique_id=224295075 instance=ExtResource("5_7kn0l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.908613, 3.3724022, -8.537756)
+
 [node name="boat" parent="." unique_id=1535798592 instance=ExtResource("4_7kn0l")]
+<<<<<<< HEAD
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.49823, 4.4390554, 2.3786745)
 
 =======
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.404793, 3.0184212, 0.07064533)
 >>>>>>> main
+=======
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.404793, 3.0184212, 8.157507)
+>>>>>>> parent of 5b0d4c7 (feat: spawn sync)
 
 [node name="ui" type="CanvasLayer" parent="." unique_id=1463128327]
 unique_name_in_owner = true
