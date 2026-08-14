@@ -9,7 +9,7 @@ class_name AnimationHandler
 var current_blend_position: Vector2 = Vector2.ZERO
 var last_known_direction: Vector2 = Vector2.DOWN
 
-const CONDITIONS: Array[String] = ["idle", "move", "run", "jump", "attack"]
+const CONDITIONS: Array[String] = ["idle", "move", "run", "jump"]
 
 var current_synced_state: String = "idle"
 
@@ -23,8 +23,8 @@ func _process(delta: float) -> void:
 			
 		if player.is_driving:
 			target_state = "idle"
-		elif Input.is_action_just_pressed("attack"):
-			target_state = "attack"
+		#elif Input.is_action_just_pressed("attack"):
+			#target_state = "attack"
 		elif !player.ground_collider.is_colliding() and !player.is_on_floor():
 			target_state = "jump"
 		elif Input.is_action_pressed("run") and player.velocity.length() != 0.0 and player.input_dir.y < -0.1:

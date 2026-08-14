@@ -111,9 +111,3 @@ scroll_down={
 3d_physics/layer_3="ground_col"
 3d_physics/layer_4="ground detector"
 3d_physics/layer_5="dragable object"
-
-[steam]
-
-initialization/app_data/app_id=480
-initialization/processes/initialize_on_startup=true
-multiplayer_peer/max_channels=8
