@@ -1,0 +1,29 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://blpi1uj36ljjt"]
+
+[ext_resource type="Shader" uid="uid://dh511whj6l7ro" path="res://assets/3d model/environment/tree/windy_tree_foliage.gdshader" id="1_gk1yx"]
+[ext_resource type="Texture2D" uid="uid://dvo6rpe6doery" path="res://assets/3d model/environment/tree/foliage_F1_Leaves_Map1.png" id="2_cdubu"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_gk1yx")
+shader_parameter/albedo = Color(0.3980484, 0.484375, 0.20812988, 1)
+shader_parameter/texture_albedo = ExtResource("2_cdubu")
+shader_parameter/alpha_scissor_threshold = 0.50000002375
+shader_parameter/albedo_texture_size = Vector2i(512, 512)
+shader_parameter/point_size = 0.0
+shader_parameter/roughness = 1.0
+shader_parameter/metallic_texture_channel = Vector4(1, 0, 0, 0)
+shader_parameter/specular = 0.499999988824
+shader_parameter/metallic = 0.0
+shader_parameter/uv1_scale = Vector3(1, 1, 1)
+shader_parameter/uv1_offset = Vector3(0, 0, 0)
+shader_parameter/uv2_scale = Vector3(1, 1, 1)
+shader_parameter/uv2_offset = Vector3(0, 0, 0)
+shader_parameter/distance_fade_mode = 1
+shader_parameter/distance_fade_min = 100.00000149012
+shader_parameter/distance_fade_max = 95.000001415614
+shader_parameter/use_wind = true
+shader_parameter/wind_strength = 0.1
+shader_parameter/wind_speed = 1.0
+shader_parameter/wind_direction = Vector3(1, 0, 0)
+shader_parameter/wind_mask_strength = 0.50000002375

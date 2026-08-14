@@ -22,13 +22,25 @@ var listener: PacketPeerUDP
 var broadcast_timer: float = 0.0
 var found_servers: Array = []
 
+@export var enable_ocean : bool = false
+@export var enable_island : bool = false
+
 func _ready() -> void:
+<<<<<<< Updated upstream
 	#var ins_island = ISLAND_MANAGER.instantiate()
 	#get_tree().current_scene.add_child(ins_island)
 	
 	#var ins_ocean = STYLIZED_OCEAN.instantiate()
 	#get_tree().current_scene.add_child(ins_ocean)
 	
+=======
+	if enable_island:
+		var ins_island = ISLAND_MANAGER.instantiate()
+		get_tree().current_scene.add_child(ins_island)
+	if enable_ocean:
+		var ins_ocean = STYLIZED_OCEAN.instantiate()
+		get_tree().current_scene.add_child(ins_ocean)
+>>>>>>> Stashed changes
 	
 	multiplayer.peer_connected.connect(_on_peer_connected)
 	multiplayer.peer_disconnected.connect(_on_peer_disconnected)
@@ -37,7 +49,7 @@ func _ready() -> void:
 	
 	# Automatically start listening for servers as soon as the game opens
 	start_listening()
-
+	
 func _process(delta: float) -> void:
 	# If we are the host, shout our existence to the network every 1 second
 	if is_host and broadcaster != null:
@@ -45,23 +57,31 @@ func _process(delta: float) -> void:
 		if broadcast_timer > 1.0:
 			broadcaster.put_packet("CatsAway".to_ascii_buffer())
 			broadcast_timer = 0.0
+<<<<<<< Updated upstream
 			
 	# If we are listening, check for incoming shouts
+=======
+>>>>>>> Stashed changes
 	if listener != null and listener.is_bound():
 		while listener.get_available_packet_count() > 0:
-			var packet = listener.get_packet().get_string_from_ascii()
-			if packet == "CatsAway":
-				var server_ip = listener.get_packet_ip()
+			var packet_bytes = listener.get_packet()
+			var server_ip = listener.get_packet_ip()
+			var packet_string = packet_bytes.get_string_from_ascii()
+			
+			if packet_string == "CatsAway":
 				if not found_servers.has(server_ip):
 					found_servers.append(server_ip)
 					_create_server_button(server_ip)
+
 
 #region LAN Discovery Functions
 func start_listening() -> void:
 	listener = PacketPeerUDP.new()
 	var error = listener.bind(BROADCAST_PORT)
+	
 	if error != Error.OK:
-		print("Failed to bind UDP listener.")
+		print("Failed to bind UDP listener on port ", BROADCAST_PORT, ". Error code: ", error)
+		
 
 func _create_server_button(ip_address: String) -> void:
 	var btn = Button.new()
@@ -92,8 +112,13 @@ func host_lobby() -> void:
 	add_player(1)
 
 func join_lobby(ip_address: String) -> void:
+<<<<<<< Updated upstream
 	# Stop listening for new servers once we join one
 	listener.close()
+=======
+	if listener != null:
+		listener.close()
+>>>>>>> Stashed changes
 	
 	peer = ENetMultiplayerPeer.new()
 	var error = peer.create_client(ip_address, GAME_PORT)
@@ -109,7 +134,19 @@ func join_lobby(ip_address: String) -> void:
 func _on_peer_connected(id: int) -> void:
 	print("Peer connected: ", id)
 	if multiplayer.is_server():
+<<<<<<< Updated upstream
 		add_player(id)
+=======
+		for player_node in get_tree().get_nodes_in_group("player"):
+			var existing_id = player_node.name.to_int()
+			if existing_id > 0 and existing_id != id:
+				rpc_id(id, "spawn_player", existing_id, player_node.global_position)
+
+				if player_node.get_parent() != self:
+					rpc_id(id, "sync_player_parent", existing_id, player_node.get_parent().get_path())
+
+		rpc("spawn_player", id, spawn_point.global_position)
+>>>>>>> Stashed changes
 
 # Server-side callback when a client disconnects
 func _on_peer_disconnected(id: int) -> void:
@@ -147,8 +184,15 @@ func add_player(id: int) -> void:
 	#call_deferred("add_child", player)
 
 func remove_player(id: int) -> void:
+<<<<<<< Updated upstream
 	if has_node(str(id)):
 		get_node(str(id)).queue_free()
+=======
+	for player_node in get_tree().get_nodes_in_group("player"):
+		if player_node.name == str(id):
+			player_node.queue_free()
+			break
+>>>>>>> Stashed changes
 
 func _on_button_pressed() -> void:
 	host_lobby()
